@@ -6,9 +6,15 @@
 
 [Website demo](https://xidist.xyz/keeks/) · [Train in Colab](https://colab.research.google.com/github/xidist/keeks-the-geek/blob/main/notebooks/Keeks_the_Geek_Colab.ipynb) · [Unsloth docs](https://unsloth.ai/docs)
 
+## Libraries & Tools expansion — November 8, 2026
+
+[Explore all 101 tools](https://xidist.xyz/keeks/libraries.html). Added 101 original introductory examples from Kiki's requested technology list. See `data/tool_catalog.json` for coverage and `data/tool_seeds.json` for training text. These primers await expert review; they are not full documentation imports or runtime-tested recipes. Ambiguous names (OBS Camera, parallax.js, MediaPipe TouchDesigner plugin) explicitly require an exact product or repository.
+
+The build combines the new primers with existing data: **233 training examples, 25 validation examples, 185 demo notes**. Existing held-out evaluation is not comprehensive across these tools. No GPU training or model-quality result is claimed.
+
 ## Current status
 
-The website is an implemented **starter-note chatbot demo**, published on xidist.xyz. It searches 84 authored reference answers in the browser. It is not currently generating answers with a fine-tuned LLM.
+The website is an implemented **starter-note chatbot demo**, published on xidist.xyz. It searches 185 authored reference answers in the browser. It is not currently generating answers with a fine-tuned LLM.
 
 This repository implements the fine-tuning, evaluation and serving pipeline. **Training has not run, no trained adapter is included, and no improvement metrics are claimed.** CPU data/pipeline checks and browser checks can run without a GPU; CUDA training and model serving still need a GPU execution test.
 
@@ -21,7 +27,7 @@ This repository implements the fine-tuning, evaluation and serving pipeline. **T
 | `data/seeds.json` | 64 authored synthetic conversations across eight areas |
 | `data/creative_seeds.json` | 45 documentation-informed examples: 36 training + 9 validation |
 | `data/creative_sources.json` | 33 official documentation and maintainer reference pages |
-| `data/train.jsonl` | 132 examples: 84 authored + 48 calculated numerical examples |
+| `data/train.jsonl` | 233 examples: 185 authored + 48 calculated numerical examples |
 | `data/validation.jsonl` | 25 held-out exercise groups |
 | `scripts/train.py` | Unsloth QLoRA, explicit response-only loss, adapter export |
 | `scripts/generate.py` | Identical base/adapter evaluation generation or one-question chat |
@@ -107,3 +113,4 @@ Keeks is text-only. It can discuss a provided spectrum or code snippet; it canno
 ## Portfolio description
 
 > Keeks the Geek is my creative-technology chatbot project connecting music, DSP, physics, AI and hands-on instrument building. I built a responsive web demo and an Unsloth QLoRA pipeline with synthetic instruction data, response-only training, held-out evaluation and adapter serving. GPU training and model evaluation are the next experimental milestone.
+

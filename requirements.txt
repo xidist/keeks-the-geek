@@ -1,0 +1,11 @@
+# Install together in a fresh NVIDIA GPU environment. Unsloth constrains its stack.
+# Versions are resolved at install time, not falsely claimed as GPU-tested pins.
+# A training run records the exact resolved environment in pip-freeze.txt.
+unsloth
+unsloth_zoo
+trl
+datasets
+transformers
+peft
+accelerate
+bitsandbytes

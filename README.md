@@ -1,5 +1,7 @@
 # Keeks the Geek
 
+[LinkedIn announcement](https://lnkd.in/p/giXem6_N)
+
 **A little chatbot for big rabbit holes.** A creative technology project by [Kiki / xidist](https://xidist.xyz), built around music, DSP, FFTs, physics, AI, programming, graphics, creative coding, drum building and Arduino synthesizers.
 
 [Website demo](https://xidist.xyz/keeks/) · [Train in Colab](https://colab.research.google.com/github/xidist/keeks-the-geek/blob/main/notebooks/Keeks_the_Geek_Colab.ipynb) · [Unsloth docs](https://unsloth.ai/docs)

@@ -1,0 +1,36 @@
+{
+  "synthetic": true,
+  "human_expert_reviewed": false,
+  "seed": 3407,
+  "split_policy": "Explicit group holdout; all variants of each numerical template remain in train.",
+  "splits": {
+    "train": {
+      "count": 96,
+      "topics": {
+        "music": 18,
+        "dsp": 42,
+        "physics": 6,
+        "ai": 6,
+        "programming": 6,
+        "graphics": 6,
+        "drums": 6,
+        "arduino": 6
+      },
+      "sha256": "2e5be26a970affa24e587197656e21c2b2ff8e5554ff7fc5292445b69f59d2e6"
+    },
+    "validation": {
+      "count": 16,
+      "topics": {
+        "music": 2,
+        "dsp": 2,
+        "physics": 2,
+        "ai": 2,
+        "programming": 2,
+        "graphics": 2,
+        "drums": 2,
+        "arduino": 2
+      },
+      "sha256": "8df1d8200af6ad1ee49c8ce35d7b8151676767fc9a3998ed834fd605f59cd88c"
+    }
+  }
+}

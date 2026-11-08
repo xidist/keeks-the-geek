@@ -1,11 +1,19 @@
 # Keeks starter dataset
 
-Created November 7, 2026 for a small experimental fine-tune. All examples are synthetic: 64 authored question/answer pairs plus 48 formula-generated pairs. No private biography, emails, medical history, copyrighted song lyrics, or scraped documentation is included. The examples have not undergone independent expert review.
+Updated November 8, 2026. All examples are synthetic: 64 original seed conversations, 45 new documentation-informed conversations, and 48 calculated examples. The total is **132 training rows and 25 validation rows**. `manifest.json` contains exact per-topic counts and hashes. The separate 25-prompt evaluation includes six numerical checks and nine creative-coding transfer tasks.
 
-There are 96 training rows and 16 validation rows. The training set has 18 music, 42 DSP, and six each of physics, AI, programming, graphics, drums and Arduino. Validation has two examples in each topic. Formula templates remain entirely in training; validation groups are disjoint. The final 16-question evaluation file is not used by the trainer. Evaluation concepts intentionally overlap the domain; prompt separation alone does not establish broad generalization or eliminate semantic similarity.
+New domains: TidalCycles, Hydra, TouchDesigner, Gibber, ChucK, sampling, synthesis, live coding, and additional graphics. Source URLs and date checked are in `creative_sources.json`; row-level `source_ids` connect the original explanations to those references. Full documentation text is not included. Sources remain owned/licensed by their authors; the catalog does not claim permission to mirror entire manuals. No recordings, private conversations, patient information or lyrics are used.
 
-Each row includes `id`, `group`, `topic`, `origin`, and a `messages` array with one system/user/assistant exchange. Formula examples also include calculation inputs and the expected numeric value. The deterministic builder validates schema and duplicate prompts and emits SHA-256 hashes in `manifest.json`.
+The examples were authored and checked against source material by an assistant, without independent human expert review. Code examples have not run in their target creative coding runtimes. JavaScript parsing and retrieval tests are not evidence that ChucK, Tidal, SuperCollider or TouchDesigner examples execute correctly. The model has not trained and no model performance measurements exist.
 
-The small, uneven dataset demonstrates style and workflow. It does not establish expert competence in electronics or acoustics. Repeated formula templates can dominate behavior. Review answers, add more varied examples, and expand every topic before drawing conclusions. Avoid training on the test prompts, and freeze a new test set if you start tuning against the current one.
+## Split policy
 
-To add an example, copy a record in `seeds.json`, give it a unique ID, use the correct topic, and assign related variants the same group and split. Run `python scripts/build_dataset.py` from the repository root. This also rebuilds browser demo notes from training seeds only. If changing dataset size, update the expected-count assertions in the tests deliberately.
+Explicit exercise groups remain in one split; formula-template variants remain in training. The validation exercises cover different tasks, but concepts and source pages may overlap training. This is not a source-disjoint or comprehensive generalization benchmark. Evaluation prompts are separate from training, validation, and browser notes. Do not tune on evaluation answers; create a new test set if you do.
+
+## Fields and reproducibility
+
+Each training row has `id`, `group`, `topic`, `origin`, and a system/user/assistant `messages` exchange. Creative rows also preserve `source_ids`, `review_status`, and `execution_status`; the assistant response includes reference URLs. Alias phrases are only for the website lookup and are not duplicated as extra training rows. Numerical examples preserve calculation inputs and expected values.
+
+Run `python scripts/build_dataset.py` to regenerate JSONL, manifest and `web/notes.js`. Demo notes include only authored training seeds (84), not validation or evaluation answers. The builder rejects duplicate prompts and group leakage. Training uses the native model chat template and fails instead of silently truncating oversized examples.
+
+This is a small, uneven pilot corpus for an experiment, not a completed documentation-trained expert. DSP numerical templates remain overrepresented. Review domain examples in the real software, expand varied debugging and multi-turn cases, and compare base and trained model outputs before connecting the adapter to the public website.

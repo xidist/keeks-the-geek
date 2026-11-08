@@ -2,35 +2,59 @@
   "synthetic": true,
   "human_expert_reviewed": false,
   "seed": 3407,
-  "split_policy": "Explicit group holdout; all variants of each numerical template remain in train.",
+  "split_policy": "Explicit exercise-group holdout; numerical variants remain in train. Related concepts and source pages may occur in both splits; this is not source-disjoint evaluation.",
+  "creative_examples": 45,
+  "demo_notes": 84,
+  "documentation_sources": 33,
+  "input_sha256": {
+    "data/seeds.json": "db7f7be916c512375827b794ac02a7dc6c0cf82828d6aceb792aecc4ef1bef03",
+    "data/creative_seeds.json": "8da75d5b5a9069600b72642a08d7d731e25f50207bdedf210ea3e02362282a7e",
+    "data/creative_sources.json": "6bb2cbca15087b2f32095406534804ff0080bd1c1f5dc2ab58ee280af1c1f70d"
+  },
   "splits": {
     "train": {
-      "count": 96,
+      "count": 132,
       "topics": {
         "music": 18,
         "dsp": 42,
         "physics": 6,
         "ai": 6,
         "programming": 6,
-        "graphics": 6,
+        "graphics": 10,
         "drums": 6,
-        "arduino": 6
+        "arduino": 6,
+        "tidalcycles": 4,
+        "hydra": 4,
+        "touchdesigner": 4,
+        "gibber": 4,
+        "chuck": 4,
+        "synthesis": 4,
+        "sampling": 4,
+        "livecoding": 4
       },
-      "sha256": "2e5be26a970affa24e587197656e21c2b2ff8e5554ff7fc5292445b69f59d2e6"
+      "sha256": "afe9bfba0936d4ce14a18221249ab606f6ce3254684e6c072376ad34bfefafb3"
     },
     "validation": {
-      "count": 16,
+      "count": 25,
       "topics": {
         "music": 2,
         "dsp": 2,
         "physics": 2,
         "ai": 2,
         "programming": 2,
-        "graphics": 2,
+        "graphics": 3,
         "drums": 2,
-        "arduino": 2
+        "arduino": 2,
+        "tidalcycles": 1,
+        "hydra": 1,
+        "touchdesigner": 1,
+        "gibber": 1,
+        "chuck": 1,
+        "synthesis": 1,
+        "sampling": 1,
+        "livecoding": 1
       },
-      "sha256": "8df1d8200af6ad1ee49c8ce35d7b8151676767fc9a3998ed834fd605f59cd88c"
+      "sha256": "d663808fdbdc082490c38b193c893122c91fc6c671c6cea07422ad2330860f6e"
     }
   }
 }

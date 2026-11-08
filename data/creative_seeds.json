@@ -1,0 +1,829 @@
+[
+  {
+    "id": "creative-tidal-start",
+    "group": "creative-tidal-start",
+    "topic": "tidalcycles",
+    "split": "train",
+    "prompt": "How do I start a TidalCycles drum pattern?",
+    "answer": "With Tidal and SuperDirt already running, evaluate this Haskell/Tidal pattern:\n```haskell\nd1 $ s \"bd*4\" # gain 0.6\n```\nIt requests four bass-drum sample events per cycle. Tidal schedules patterns; SuperDirt supplies the sound. If it is silent, check the SuperDirt server, sample bank and audio device before changing the rhythm.",
+    "source_ids": [
+      "tidal-patterns",
+      "tidal-overview"
+    ],
+    "aliases": [
+      "tidal",
+      "tidal cycles",
+      "tidalcycles",
+      "tidal docs",
+      "tidal drum",
+      "tidal synth"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-tidal-rest",
+    "group": "creative-tidal-rest",
+    "topic": "tidalcycles",
+    "split": "train",
+    "prompt": "How do rests and subdivisions work in Tidal?",
+    "answer": "A tilde is a rest; brackets subdivide one position. Try:\n```haskell\nd1 $ s \"bd [hh hh] ~ cp\" # gain 0.5\n```\nThe cycle has four outer slots. Two hats share the second slot; the third is silent. Keep tempo fixed while replacing [hh hh] with [hh hh hh] so you hear subdivision rather than a tempo change.",
+    "source_ids": [
+      "tidal-mini"
+    ],
+    "aliases": [
+      "tidal mini notation",
+      "tidal rhythm"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-tidal-filter",
+    "group": "creative-tidal-filter",
+    "topic": "tidalcycles",
+    "split": "train",
+    "prompt": "Can I pattern a filter in TidalCycles?",
+    "answer": "Yes: control values can themselves be patterns. For example:\n```haskell\nd1 $ s \"bd hh cp hh\" # lpf \"700 1400 2800 1400\" # gain 0.5\n```\nThe cutoff values are in Hz. This shapes playback through SuperDirt; it does not edit the sample file. Compare the same sequence with a fixed cutoff before adding more modulation.",
+    "source_ids": [
+      "tidal-controls"
+    ],
+    "aliases": [
+      "tidal cutoff"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-tidal-layers",
+    "group": "creative-tidal-layers",
+    "topic": "tidalcycles",
+    "split": "train",
+    "prompt": "How do I layer TidalCycles drums?",
+    "answer": "Use a comma inside a bracketed mini-notation pattern for simultaneous layers:\n```haskell\nd1 $ s \"[bd*4, hh*8, ~ cp ~ cp]\" # gain 0.4\n```\nEach layer occupies the same cycle. The kick and hat have different event counts while the clap uses four positions. Listen to the layers separately first; simultaneous samples increase peak level.",
+    "source_ids": [
+      "tidal-mini"
+    ],
+    "aliases": [
+      "tidal stack",
+      "tidal beat"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-tidal-synth-choice",
+    "group": "creative-tidal-synth-choice",
+    "topic": "tidalcycles",
+    "split": "validation",
+    "prompt": "Does every TidalCycles sound name identify a synthesizer?",
+    "answer": "No. The sound control can address sample banks and installed SuperDirt synths. A name that works on someone else's machine may depend on a custom SynthDef or sample folder. Ask for the exact sound name and their SuperDirt setup; verify the simplest event locally before assuming the model's name exists.",
+    "source_ids": [
+      "tidal-controls",
+      "tidal-overview"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-hydra-start",
+    "group": "creative-hydra-start",
+    "topic": "hydra",
+    "split": "train",
+    "prompt": "Show me a small Hydra visual patch.",
+    "answer": "In the Hydra editor:\n```javascript\nosc(12, 0.08, 0.4).out(o0)\n```\nThis is a visual oscillator: frequency sets the stripe density, sync controls movement, and offset separates color channels. It does not produce an audible tone. Change one parameter at a time to learn the image response.",
+    "source_ids": [
+      "hydra-sources"
+    ],
+    "aliases": [
+      "hydra",
+      "hydra docs",
+      "hydra graphics",
+      "hydra visuals"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-hydra-audio",
+    "group": "creative-hydra-audio",
+    "topic": "hydra",
+    "split": "train",
+    "prompt": "How do I make Hydra react to audio?",
+    "answer": "Allow the Hydra editor to use the intended microphone, then try:\n```javascript\na.setBins(4)\na.setSmooth(0.75)\na.show()\nosc(8, 0.05, 0.3).modulate(noise(3), () => 0.02 + 0.12 * (a.fft[0] || 0)).out(o0)\n```\nThe callback reads the low-band value each frame. Check that the displayed band responds first. An FFT band is a level feature, not a reliable drum or chord detector.",
+    "source_ids": [
+      "hydra-audio",
+      "hydra-modulation"
+    ],
+    "aliases": [
+      "hydra fft",
+      "hydra music",
+      "hydra audio reactive"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-hydra-modulate",
+    "group": "creative-hydra-modulate",
+    "topic": "hydra",
+    "split": "train",
+    "prompt": "What does Hydra modulate do?",
+    "answer": "Modulation uses another texture to distort sampling coordinates. Blending combines color values. In this original patch, noise warps stripes:\n```javascript\nosc(9, 0.04, 0.2).modulate(noise(2.5), 0.08).out(o0)\n```\nTry an amount of 0 first, then increase slowly. If everything becomes difficult to read, reduce distortion before adding another transform.",
+    "source_ids": [
+      "hydra-modulation"
+    ],
+    "aliases": [
+      "hydra modulation",
+      "hydra noise"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-hydra-buffer",
+    "group": "creative-hydra-buffer",
+    "topic": "hydra",
+    "split": "train",
+    "prompt": "Why does my Hydra patch in o1 not appear?",
+    "answer": "Writing a patch to o1 does not automatically select it for display. Try:\n```javascript\nshape(5, 0.35, 0.03).out(o1)\nrender(o1)\n```\nrender() without an argument shows all four outputs. src(o1) lets another patch read that output. Check the output and display selection separately when debugging a black canvas.",
+    "source_ids": [
+      "hydra-outputs",
+      "hydra-sources"
+    ],
+    "aliases": [
+      "hydra output"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-hydra-static-time",
+    "group": "creative-hydra-static-time",
+    "topic": "hydra",
+    "split": "validation",
+    "prompt": "Why does using a time expression as a Hydra parameter sometimes freeze it?",
+    "answer": "A plain JavaScript expression is evaluated when the patch is created. Supply a no-argument function that returns a number when the value must update each frame, such as () => 1 + 0.2 * Math.sin(time). Also check Hydra's speed setting; speed = 0 freezes its time progression.",
+    "source_ids": [
+      "hydra-functions"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-td-start",
+    "group": "creative-td-start",
+    "topic": "touchdesigner",
+    "split": "train",
+    "prompt": "How do I bring guitar audio into TouchDesigner?",
+    "answer": "Start with Audio Device In CHOP, choose the guitar interface and input channels, and enable Active. Check its waveform before adding processing. The operator outputs time-sliced audio. A guitar interface's direct-monitor path can make you hear the guitar even when TouchDesigner receives nothing, so confirm the CHOP data independently.",
+    "source_ids": [
+      "td-input"
+    ],
+    "aliases": [
+      "td",
+      "td docs",
+      "touchdesigner",
+      "touch designer",
+      "touchdesigner docs",
+      "td guitar"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-td-spectrum",
+    "group": "creative-td-spectrum",
+    "topic": "touchdesigner",
+    "split": "train",
+    "prompt": "How do I make an FFT visualizer in TouchDesigner?",
+    "answer": "Feed Audio Device In CHOP into Audio Spectrum CHOP. Begin in Visualization mode and confirm the source sample rate and FFT size. A larger FFT observes a longer window. Visualization mode can remap the horizontal scale and boost high frequencies, so do not interpret its output as untouched DFT bins. Test with a known sine tone before mapping bands to graphics.",
+    "source_ids": [
+      "td-spectrum"
+    ],
+    "aliases": [
+      "td fft",
+      "touchdesigner spectrum",
+      "td audio visualization"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-td-smooth",
+    "group": "creative-td-smooth",
+    "topic": "touchdesigner",
+    "split": "train",
+    "prompt": "How do I smooth a TouchDesigner audio-reactive control?",
+    "answer": "After extracting a level feature, use Lag CHOP to smooth that control. Its rise and fall settings can differ: try a faster rise and slower fall for a punchy but readable animation. Keep raw audio separate from the visual control branch. Compare the lagged control with the input; smoothing trades response speed for stability.",
+    "source_ids": [
+      "td-lag"
+    ],
+    "aliases": [
+      "td lag",
+      "touchdesigner smoothing"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-td-texture",
+    "group": "creative-td-texture",
+    "topic": "touchdesigner",
+    "split": "train",
+    "prompt": "How do I send CHOP values into a TouchDesigner texture?",
+    "answer": "Use CHOP to TOP and select a data format matching your channels. RGBA groups channels in order; channel names alone do not determine the color assignment. Start with known constants, such as a red channel of 1 and green/blue of 0, to check the mapping before feeding a spectrum into a shader.",
+    "source_ids": [
+      "td-texture"
+    ],
+    "aliases": [
+      "td chop top",
+      "touchdesigner shader"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-td-spectrum-rebuild",
+    "group": "creative-td-spectrum-rebuild",
+    "topic": "touchdesigner",
+    "split": "validation",
+    "prompt": "Can I reconstruct clean audio from TouchDesigner's spectrum visualization?",
+    "answer": "Do not assume the visualization output preserves the data needed for reconstruction. Audio Spectrum CHOP provides separate Time to Magnitude and Phase and Magnitude and Phase to Time modes. Preserve both components and verify windowing, overlap and audio continuity with an unchanged round trip before manipulating frequencies. A visually plausible spectrum is not proof of correct audio reconstruction.",
+    "source_ids": [
+      "td-spectrum"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-start",
+    "group": "creative-gibber-start",
+    "topic": "gibber",
+    "split": "train",
+    "prompt": "How do I sequence a synth in Gibber?",
+    "answer": "For the Gibber playground API:\n```javascript\nlead = Synth('bleep')\nlead.gain = 0.15\nlead.note.seq([0, 2, 4, 1], 1/8)\n```\nThe durations use musical fractions of a measure. Numeric notes follow the active theory settings; do not assume they are MIDI numbers. Stop this instrument's sequences with lead.stop(). Verify the playground version when adapting older Gibber examples.",
+    "source_ids": [
+      "gibber-sequence"
+    ],
+    "aliases": [
+      "gibber",
+      "gibber docs",
+      "gibber synth",
+      "gibber livecoding"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-drums",
+    "group": "creative-gibber-drums",
+    "topic": "gibber",
+    "split": "train",
+    "prompt": "What is the difference between Gibber Drums and EDrums?",
+    "answer": "Drums groups sample players; EDrums groups synthesized percussion voices. Choose Drums for recorded hits and EDrums when you want to shape electronic drum voices. The reference exposes each member separately, so inspect the relevant kick, snare or hat controls rather than assuming a sample playback-rate parameter also exists on a synthesized drum.",
+    "source_ids": [
+      "gibber-reference"
+    ],
+    "aliases": [
+      "gibber drums",
+      "gibber drum synth"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-sampler",
+    "group": "creative-gibber-sampler",
+    "topic": "gibber",
+    "split": "train",
+    "prompt": "How does Gibber Sampler change pitch?",
+    "answer": "In the documented Sampler API, note values control playback rate. A value of 1 plays at the original rate; 2 is twice as fast and an octave higher. The duration becomes half as long. This is playback transposition, not independent time stretching. Confirm the sample has loaded and check cross-origin access when hosting your own files.",
+    "source_ids": [
+      "gibber-sample"
+    ],
+    "aliases": [
+      "gibber sample"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-envelope",
+    "group": "creative-gibber-envelope",
+    "topic": "gibber",
+    "split": "train",
+    "prompt": "How do I make a short percussive Gibber synth?",
+    "answer": "Start with a simple oscillator and a short attack/decay:\n```javascript\nperc = Synth('blank', { attack: 1/512, decay: 1/8, gain: 0.15 })\nperc.note.seq([0, 3, 2], 1/4)\n```\nThese times use musical units. Gibber's envelopes can influence timbre as well as amplitude. Use gain to adjust final level without deliberately changing the envelope's timbral strength.",
+    "source_ids": [
+      "gibber-env",
+      "gibber-osc"
+    ],
+    "aliases": [
+      "gibber percussion"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-multiple",
+    "group": "creative-gibber-multiple",
+    "topic": "gibber",
+    "split": "validation",
+    "prompt": "Two Gibber note sequences replace each other. Why?",
+    "answer": "Sequences on the same method or property share default ID 0. Supplying different sequence IDs allows concurrent patterns. Check polyphony too: scheduling overlapping notes does not automatically give a monophonic instrument extra voices. First verify a two-pattern example at low density, then add more layers.",
+    "source_ids": [
+      "gibber-sequence"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-chuck-start",
+    "group": "creative-chuck-start",
+    "topic": "chuck",
+    "split": "train",
+    "prompt": "How do I play a quiet tone in ChucK?",
+    "answer": "Run this in a ChucK runtime:\n```chuck\nSinOsc tone => dac;\n0.05 => tone.gain;\n220 => tone.freq;\n250::ms => now;\n```\nThe connection builds the audio graph. Advancing now lets synthesis run for the specified duration; simply constructing an oscillator does not keep a shred alive.",
+    "source_ids": [
+      "chuck-ugens",
+      "chuck-time"
+    ],
+    "aliases": [
+      "chuck",
+      "chuck docs",
+      "chucK synth",
+      "chuck oscillator"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-chuck-buffer",
+    "group": "creative-chuck-buffer",
+    "topic": "chuck",
+    "split": "train",
+    "prompt": "How do I trigger a drum sample in ChucK?",
+    "answer": "Place a mono kick.wav beside the script, then try:\n```chuck\nSndBuf hit => dac;\nme.dir() + \"kick.wav\" => hit.read;\n0.15 => hit.gain;\nfor (0 => int i; i < 4; i++) {\n    0 => hit.pos;\n    500::ms => now;\n}\n```\nResetting pos retriggers playback. Confirm the file loaded. Reusing one player retriggers or cuts off its earlier hit; use separate voices for overlaps.",
+    "source_ids": [
+      "chuck-ugens"
+    ],
+    "aliases": [
+      "chuck sample",
+      "chuck drums"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-chuck-tempo",
+    "group": "creative-chuck-tempo",
+    "topic": "chuck",
+    "split": "train",
+    "prompt": "How do I convert BPM to a ChucK beat duration?",
+    "answer": "For quarter-note BPM, use 60/BPM seconds per beat:\n```chuck\n110.0 => float bpm;\n(60.0 / bpm)::second => dur beat;\n4::beat => now;\n```\nThis waits four beats in logical audio time. Keep the BPM definition explicit: a dotted-quarter pulse and a quarter-note pulse are different assumptions.",
+    "source_ids": [
+      "chuck-time"
+    ],
+    "aliases": [
+      "chuck bpm",
+      "chuck timing"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-chuck-envelope",
+    "group": "creative-chuck-envelope",
+    "topic": "chuck",
+    "split": "train",
+    "prompt": "How does ADSR work in ChucK?",
+    "answer": "ADSR shapes a connected signal and responds to keyOn and keyOff. Attack, decay and release are durations; sustain is a level. For a percussive sound, choose a short attack and low sustain. Advance now while the envelope runs, including after keyOff, or the shred can end before the release is heard.",
+    "source_ids": [
+      "chuck-ugens"
+    ],
+    "aliases": [
+      "chuck adsr"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-chuck-loop-freeze",
+    "group": "creative-chuck-loop-freeze",
+    "topic": "chuck",
+    "split": "validation",
+    "prompt": "Why does my ChucK while loop freeze the audio?",
+    "answer": "Look for a loop that never advances time or waits on an event. Repeating calculations at the same logical instant can prevent other shreds and audio computation from progressing. Add an intentional positive duration or appropriate event wait. Avoid a zero-duration wait as a supposed timing repair; decide how frequently the work actually needs to run.",
+    "source_ids": [
+      "chuck-time"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-drum-synth",
+    "group": "creative-drum-synth",
+    "topic": "synthesis",
+    "split": "train",
+    "prompt": "How do I build a drum synthesizer?",
+    "answer": "Start with three voices:\n• Kick: sine oscillator with a fast downward pitch envelope and a longer amplitude decay.\n• Snare: a short tonal body mixed with filtered noise.\n• Hi-hat: high-passed noise with a very short envelope.\n\nFor an original kick experiment, try f(t)=50+100·exp(-t/0.025) Hz and A(t)=0.2·exp(-t/0.15), with t in seconds and a short attack ramp. Integrate frequency into phase; sin(2πf(t)t) is not the correct general formula for changing frequency. These are starting parameters, not measured drum properties. Choose ChucK, SuperCollider, Web Audio, or an Arduino board next.",
+    "source_ids": [
+      "sc-sine",
+      "sc-noise",
+      "sc-envelope"
+    ],
+    "aliases": [
+      "drum synth",
+      "drum synthesis",
+      "drum synthesizer",
+      "synthesize drums",
+      "808",
+      "kick synth"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sc-kick",
+    "group": "creative-sc-kick",
+    "topic": "synthesis",
+    "split": "train",
+    "prompt": "Show me a SuperCollider kick synth.",
+    "answer": "With the SuperCollider server booted, try this original one-shot patch at low output level:\n```supercollider\n{\n    var amp = EnvGen.kr(Env.perc(0.002, 0.3), doneAction: 2);\n    var pitch = 48 + (100 * EnvGen.kr(Env.perc(0.001, 0.035)));\n    (SinOsc.ar(pitch) * amp * 0.15) ! 2\n}.play;\n```\nThe pitch envelope creates the downward sweep; the amplitude envelope frees the synth when finished. Change decay and pitch sweep separately. This snippet has not been auditioned here.",
+    "source_ids": [
+      "sc-sine",
+      "sc-envelope"
+    ],
+    "aliases": [
+      "supercollider",
+      "supercollider kick"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-web-kick",
+    "group": "creative-web-kick",
+    "topic": "synthesis",
+    "split": "train",
+    "prompt": "How do I make a Web Audio kick?",
+    "answer": "Inside a user-triggered handler, resume an existing AudioContext named ctx, then create an oscillator and gain:\n```javascript\nawait ctx.resume();\nconst t = ctx.currentTime + 0.02;\nconst osc = ctx.createOscillator();\nconst amp = ctx.createGain();\nosc.connect(amp).connect(ctx.destination);\nosc.frequency.setValueAtTime(145, t);\nosc.frequency.exponentialRampToValueAtTime(48, t + 0.08);\namp.gain.setValueAtTime(0, t);\namp.gain.linearRampToValueAtTime(0.15, t + 0.003);\namp.gain.exponentialRampToValueAtTime(0.0001, t + 0.3);\nosc.start(t);\nosc.stop(t + 0.32);\n```\nExponential ramps need positive endpoints. Recreate the oscillator for each hit.",
+    "source_ids": [
+      "web-osc",
+      "web-ramp"
+    ],
+    "aliases": [
+      "web audio kick",
+      "javascript drum"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-snare-hat",
+    "group": "creative-snare-hat",
+    "topic": "synthesis",
+    "split": "train",
+    "prompt": "What separates synthesized snares and hi-hats?",
+    "answer": "A useful design experiment is to start with the same noise source. Give the snare a band-limited noise burst plus a low tonal body; give the hat a brighter filtered spectrum and shorter decay. Compare at matched peak level, then matched perceived loudness. Noise alone is not a physical model of a particular instrument, and envelope changes can matter as much as the filter.",
+    "source_ids": [
+      "sc-noise"
+    ],
+    "aliases": [
+      "snare synth",
+      "hi hat synth",
+      "hat synthesis"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-envelope-click",
+    "group": "creative-envelope-click",
+    "topic": "synthesis",
+    "split": "validation",
+    "prompt": "A very short kick envelope clicks. Is that always aliasing?",
+    "answer": "No. Abrupt waveform or gain discontinuities can produce broadband transients even at a low fundamental. First compare a small attack ramp, a smoother release and consistent oscillator phase. Aliasing is a separate concern involving out-of-band content folding into the sampled spectrum. Inspect and listen to controlled variants instead of diagnosing from the word click alone.",
+    "source_ids": [
+      "web-ramp",
+      "web-osc"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sampling-start",
+    "group": "creative-sampling-start",
+    "topic": "sampling",
+    "split": "train",
+    "prompt": "How should I prepare my own drum samples?",
+    "answer": "Record individual hits with headroom and a fixed microphone setup. Keep a little pre-transient audio, trim excess silence, and use short fades where a cut would jump abruptly. Save an untouched original and label instrument, velocity and take number. Capture several strikes at each strength for variation. File naming and playback code do not grant rights to redistribute someone else's recording.",
+    "source_ids": [
+      "web-buffer"
+    ],
+    "aliases": [
+      "drum sampling",
+      "sampling",
+      "drum samples",
+      "sample drums"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sampling-rate",
+    "group": "creative-sampling-rate",
+    "topic": "sampling",
+    "split": "train",
+    "prompt": "What happens when I transpose a sample by playback rate?",
+    "answer": "For a pitch shift of s semitones, rate=2^(s/12). A shift of +7 gives about 1.4983 times playback speed; a 1-second sample then lasts about 0.6674 seconds. This changes duration and pitch together. Time stretching needs a different algorithm if tempo should stay fixed. Verify with a test tone and a sample containing a sharp transient.",
+    "source_ids": [
+      "web-buffer",
+      "gibber-sample"
+    ],
+    "aliases": [
+      "sample pitch",
+      "sample rate pitch"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sample-retrigger",
+    "group": "creative-sample-retrigger",
+    "topic": "sampling",
+    "split": "train",
+    "prompt": "Why can I only start a Web Audio drum sample once?",
+    "answer": "An AudioBufferSourceNode can be started only once. Decode the recording into an AudioBuffer once, then create a fresh source node for each trigger and reuse the buffer. Schedule each source with start(time). Repeatedly decoding the same file or fetching it at trigger time introduces unnecessary work and timing risk.",
+    "source_ids": [
+      "web-buffer",
+      "web-decode"
+    ],
+    "aliases": [
+      "sample trigger",
+      "audiobuffersource"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sample-decode",
+    "group": "creative-sample-decode",
+    "topic": "sampling",
+    "split": "train",
+    "prompt": "Does decodeAudioData keep the original file sample rate?",
+    "answer": "The decoded AudioBuffer is resampled to the AudioContext's sample rate. Keep the original file metadata separately if source-rate provenance matters. Sample indices in the decoded buffer refer to that buffer's rate: seconds=index/buffer.sampleRate. Do not treat index 48000 as one second without checking the actual buffer rate.",
+    "source_ids": [
+      "web-decode"
+    ],
+    "aliases": [
+      "decode audio",
+      "sample import"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-sample-loop-seam",
+    "group": "creative-sample-loop-seam",
+    "topic": "sampling",
+    "split": "validation",
+    "prompt": "My loop clicks at the seam although both ends are near zero. What next?",
+    "answer": "Zero-valued endpoints help, but their slopes and surrounding waveforms may still disagree. Inspect several milliseconds on each side, try a short equal-power or linear crossfade appropriate to the material, and compare multiple loop positions. Crossfading can also change the transient or timbre, so listen at normal speed and preserve the unedited source.",
+    "source_ids": [
+      "web-buffer"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-p5-start",
+    "group": "creative-p5-start",
+    "topic": "graphics",
+    "split": "train",
+    "prompt": "Give me a p5.js creative coding starting point.",
+    "answer": "In a p5.js sketch:\n```javascript\nfunction setup() { createCanvas(480, 320); }\nfunction draw() {\n  background(14, 20, 17);\n  fill(196, 245, 134);\n  circle(width / 2, height / 2, 90 + 20 * sin(millis() / 600));\n}\n```\nThis animation uses time, not microphone data. Treat it as a visual control test before connecting an audio feature. Create the main canvas once in setup.",
+    "source_ids": [
+      "p5-canvas"
+    ],
+    "aliases": [
+      "p5",
+      "p5js",
+      "p5.js",
+      "graphics docs",
+      "creative coding"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-p5-shader",
+    "group": "creative-p5-shader",
+    "topic": "graphics",
+    "split": "train",
+    "prompt": "How do I start using a shader in p5.js?",
+    "answer": "Create a canvas in WEBGL mode, create or load a p5.Shader, and apply it with shader(...). First draw a constant color; next pass a time or audio-feature uniform. A shader does not automatically know your audio data. Check the p5 and GLSL versions before copying syntax, and use resetShader() when returning to the normal material.",
+    "source_ids": [
+      "p5-shader"
+    ],
+    "aliases": [
+      "glsl",
+      "shader",
+      "graphics shader"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-p5-motion",
+    "group": "creative-p5-motion",
+    "topic": "graphics",
+    "split": "train",
+    "prompt": "How do I keep p5.js motion consistent at different frame rates?",
+    "answer": "Express velocity in pixels per second and multiply by deltaTime/1000 to get each frame's displacement. For example, 90 pixels/s over 20 ms means 1.8 pixels. Large pauses can cause a huge jump: decide whether to clamp the timestep for a visual effect or use bounded substeps for a simulation. Rendering speed should not define the intended motion speed.",
+    "source_ids": [
+      "p5-time"
+    ],
+    "aliases": [
+      "graphics timing",
+      "p5 delta time"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-gibber-visual",
+    "group": "creative-gibber-visual",
+    "topic": "graphics",
+    "split": "train",
+    "prompt": "How do I start Gibber graphics?",
+    "answer": "Gibber's documented graphics use ray marching. Try a simple object in the playground:\n```javascript\nGraphics.quality = 'low'\norb = Sphere(0.65).render()\n```\nGet one object rendering before adding geometry combinations or audio mappings. Graphics quality affects cost; start low while troubleshooting. This uses Gibber's graphics API, not Hydra syntax.",
+    "source_ids": [
+      "gibber-graphics"
+    ],
+    "aliases": [
+      "gibber graphics",
+      "livecoding graphics"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-p5-noise",
+    "group": "creative-p5-noise",
+    "topic": "graphics",
+    "split": "validation",
+    "prompt": "Why is noise better than independent random values for smooth p5 motion?",
+    "answer": "Nearby noise coordinates tend to give nearby outputs, while fresh independent random values can jump widely. Advance a coordinate slowly and map the result to position. p5 noise returns values from 0 to 1; center it if you need positive and negative motion. Fix the noise seed when you want repeatable comparisons.",
+    "source_ids": [
+      "p5-noise"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-live-start",
+    "group": "creative-live-start",
+    "topic": "livecoding",
+    "split": "train",
+    "prompt": "How do I start live coding music and graphics?",
+    "answer": "Pick one sound system and one visual system. A manageable pairing is TidalCycles with SuperDirt for patterns and Hydra for visuals. First make a simple drum loop and a static visual independently. Add audio-reactive motion afterward. Microphone reactivity is not clock synchronization: rehearse starts, stops and recovery before expecting both systems to share a beat grid.",
+    "source_ids": [
+      "tidal-overview",
+      "hydra-audio"
+    ],
+    "aliases": [
+      "livecoding",
+      "live coding",
+      "algorave",
+      "livecoding docs"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-live-schedule",
+    "group": "creative-live-schedule",
+    "topic": "livecoding",
+    "split": "train",
+    "prompt": "How should a browser drum sequencer schedule notes?",
+    "answer": "Use the AudioContext clock for scheduled sound events. A JavaScript timer can periodically queue a short horizon of future events, but should not be the exact firing clock. Keep next-event time anchored to the beat grid instead of adding delay after a callback finishes. Measure timing under graphics load and balance scheduling horizon against how quickly live edits should respond.",
+    "source_ids": [
+      "web-schedule"
+    ],
+    "aliases": [
+      "livecoding timing",
+      "sequencer",
+      "drum sequencer"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-live-edit",
+    "group": "creative-live-edit",
+    "topic": "livecoding",
+    "split": "train",
+    "prompt": "How do I make live coding edits without losing the groove?",
+    "answer": "Keep a working minimal pattern and change one dimension at a time: event density, sound choice, then timbre. Save a known-good version and rehearse the environment's stop/reset action. Test edits at a quiet level before a performance. This is a practice workflow; exact replacement timing depends on the language and host.",
+    "source_ids": [
+      "tidal-patterns",
+      "gibber-sequence"
+    ],
+    "aliases": [
+      "livecoding performance",
+      "live coding workflow"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-live-docs",
+    "group": "creative-live-docs",
+    "topic": "livecoding",
+    "split": "train",
+    "prompt": "How should Keeks use live coding documentation?",
+    "answer": "Name the environment and version before giving executable code. Keep Tidal/Haskell, Hydra/JavaScript, Gibber/JavaScript, ChucK and TouchDesigner operator workflows distinct. Cite the relevant official page and label any untested sketch. When an API is uncertain, request the installed version or error message instead of inventing a function. Documentation can change after a model is trained.",
+    "source_ids": [
+      "tidal-overview",
+      "hydra-sources",
+      "chuck-time"
+    ],
+    "aliases": [
+      "livecoding reference",
+      "docs",
+      "documentation"
+    ],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  },
+  {
+    "id": "creative-live-cross-clock",
+    "group": "creative-live-cross-clock",
+    "topic": "livecoding",
+    "split": "validation",
+    "prompt": "My audio and visuals drift after a minute. Will more smoothing synchronize them?",
+    "answer": "Smoothing can reduce jitter but does not reconcile independent clocks. First log event timestamps and determine whether the problem is a constant offset, jitter or accumulating drift. Use a shared transport or explicit synchronization messages where the hosts support them. Choose a clock authority and test under load; do not claim sample-accurate cross-application timing without measuring it.",
+    "source_ids": [
+      "web-schedule",
+      "hydra-functions"
+    ],
+    "aliases": [],
+    "origin": "synthetic-doc-informed",
+    "review_status": "assistant-source-checked; not human-expert-reviewed",
+    "execution_status": "not-run-in-target-runtime"
+  }
+]

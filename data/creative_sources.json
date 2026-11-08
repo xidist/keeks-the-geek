@@ -1,0 +1,299 @@
+[
+  {
+    "id": "tidal-patterns",
+    "title": "TidalCycles patterns",
+    "url": "https://tidalcycles.org/docs/reference/patterns/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "tidal-mini",
+    "title": "TidalCycles mini-notation",
+    "url": "https://tidalcycles.org/docs/reference/mini_notation/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "tidal-controls",
+    "title": "TidalCycles controls",
+    "url": "https://tidalcycles.org/docs/reference/controls/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "tidal-overview",
+    "title": "TidalCycles overview",
+    "url": "https://tidalcycles.org/docs/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "hydra-sources",
+    "title": "Hydra sources",
+    "url": "https://hydra.ojack.xyz/docs/docs/learning/video-synth-basics/src/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "hydra-modulation",
+    "title": "Hydra modulation",
+    "url": "https://hydra.ojack.xyz/docs/docs/learning/video-synth-basics/modulate/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "hydra-audio",
+    "title": "Hydra audio input",
+    "url": "https://hydra.ojack.xyz/docs/docs/learning/interactivity/audio/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "hydra-outputs",
+    "title": "Hydra outputs",
+    "url": "https://hydra.ojack.xyz/docs/docs/learning/video-synth-basics/outputs/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "hydra-functions",
+    "title": "Hydra dynamic parameters",
+    "url": "https://hydra.ojack.xyz/docs/docs/learning/sequencing/arrow-functions/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "td-input",
+    "title": "TouchDesigner Audio Device In CHOP",
+    "url": "https://derivative.ca/UserGuide/Audio_Device_In_CHOP",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "td-spectrum",
+    "title": "TouchDesigner Audio Spectrum CHOP",
+    "url": "https://derivative.ca/UserGuide/Audio_Spectrum_CHOP",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "td-lag",
+    "title": "TouchDesigner Lag CHOP",
+    "url": "https://derivative.ca/UserGuide/Lag_CHOP",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "td-texture",
+    "title": "TouchDesigner CHOP to TOP",
+    "url": "https://derivative.ca/UserGuide/CHOP_to_TOP",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-reference",
+    "title": "Gibber instruments reference",
+    "url": "https://gibber.cc/docs/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-sequence",
+    "title": "Gibber sequencing tutorial",
+    "url": "https://github.com/gibber-cc/gibber/blob/main/playground/examples/sequencing.js",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-osc",
+    "title": "Gibber oscillator tutorial",
+    "url": "https://github.com/gibber-cc/gibber/blob/main/playground/examples/sounddesign_oscillators.js",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-env",
+    "title": "Gibber envelope tutorial",
+    "url": "https://github.com/gibber-cc/gibber/blob/main/playground/examples/sounddesign_envelopes.js",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-sample",
+    "title": "Gibber sampler tutorial",
+    "url": "https://github.com/gibber-cc/gibber/blob/main/playground/examples/sampler.js",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "gibber-graphics",
+    "title": "Gibber graphics tutorial",
+    "url": "https://github.com/gibber-cc/gibber/blob/main/playground/examples/graphics.intro.js",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "chuck-time",
+    "title": "ChucK time",
+    "url": "https://chuck.stanford.edu/doc/language/time.html",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "chuck-ugens",
+    "title": "ChucK basic unit generators",
+    "url": "https://chuck.stanford.edu/doc/reference/ugens-basic.html",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "web-buffer",
+    "title": "Web Audio buffer playback",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "web-decode",
+    "title": "Web Audio decoding",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "web-osc",
+    "title": "Web Audio oscillator",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "web-ramp",
+    "title": "Web Audio exponential automation",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/exponentialRampToValueAtTime",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "web-schedule",
+    "title": "Web Audio sequencing",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Advanced_techniques",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "sc-sine",
+    "title": "SuperCollider SinOsc",
+    "url": "https://docs.supercollider.online/Classes/SinOsc.html",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "sc-envelope",
+    "title": "SuperCollider EnvGen",
+    "url": "https://docs.supercollider.online/Classes/EnvGen.html",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "sc-noise",
+    "title": "SuperCollider WhiteNoise",
+    "url": "https://docs.supercollider.online/Classes/WhiteNoise.html",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "p5-canvas",
+    "title": "p5.js canvas",
+    "url": "https://p5js.org/reference/p5/createCanvas/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "p5-shader",
+    "title": "p5.js shader",
+    "url": "https://p5js.org/reference/p5/shader/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "p5-time",
+    "title": "p5.js frame duration",
+    "url": "https://p5js.org/reference/p5/deltaTime/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  },
+  {
+    "id": "p5-noise",
+    "title": "p5.js noise",
+    "url": "https://p5js.org/reference/p5/noise/",
+    "checked_on": "2026-11-08",
+    "version_note": "Living documentation; confirm installed version before running code.",
+    "use": "Reference for original instructional examples. No full documentation mirror.",
+    "raw_text_included": false
+  }
+]

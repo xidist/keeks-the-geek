@@ -25,11 +25,11 @@ class PipelineTests(unittest.TestCase):
 
     def test_schema_counts_and_groups(self):
         validate_rows(self.train + self.val)
-        self.assertEqual((len(self.train), len(self.val)), (96, 16))
+        self.assertEqual((len(self.train), len(self.val)), (132, 25))
         self.assertFalse({r["group"] for r in self.train} & {r["group"] for r in self.val})
 
     def test_every_topic_in_both_splits(self):
-        expected = {"music", "dsp", "physics", "ai", "programming", "graphics", "drums", "arduino"}
+        expected = {"music", "dsp", "physics", "ai", "programming", "graphics", "drums", "arduino", "tidalcycles", "hydra", "touchdesigner", "gibber", "chuck", "sampling", "synthesis", "livecoding"}
         self.assertEqual({r["topic"] for r in self.train}, expected)
         self.assertEqual({r["topic"] for r in self.val}, expected)
 
@@ -86,8 +86,8 @@ class PipelineTests(unittest.TestCase):
     def test_eval_prompts_are_distinct(self):
         prompts = {r["messages"][1]["content"] for r in self.train+self.val}
         tests = read_jsonl(ROOT / "eval/prompts.jsonl")
-        self.assertEqual(len(tests),16)
-        self.assertEqual(len({r["id"] for r in tests}),16)
+        self.assertEqual(len(tests),25)
+        self.assertEqual(len({r["id"] for r in tests}),25)
         self.assertFalse(prompts & {r["prompt"] for r in tests})
         self.assertEqual(sum("expected_number" in r for r in tests),6)
 
@@ -99,9 +99,34 @@ class PipelineTests(unittest.TestCase):
     def test_demo_only_uses_training_seeds(self):
         text = (ROOT / "web/notes.js").read_text()
         rows = json.loads(text.split("window.KEEKS_NOTES = ",1)[1].rstrip(";\n"))
-        self.assertEqual(len(rows),48)
+        self.assertEqual(len(rows),84)
         self.assertTrue({r["id"] for r in rows} <= {r["id"] for r in self.train})
         self.assertFalse({r["id"] for r in rows} & {r["id"] for r in self.val})
+
+    def test_creative_provenance_and_coverage(self):
+        sources = json.loads((ROOT / "data/creative_sources.json").read_text())
+        ids = {s["id"] for s in sources}
+        self.assertEqual(len(ids), len(sources))
+        self.assertTrue(all(s["url"].startswith("https://") for s in sources))
+        creative = json.loads((ROOT / "data/creative_seeds.json").read_text())
+        self.assertEqual(len(creative), 45)
+        for row in creative:
+            self.assertTrue(row["source_ids"])
+            self.assertTrue(set(row["source_ids"]) <= ids)
+            self.assertIn("not human-expert-reviewed", row["review_status"])
+        for row in self.train + self.val:
+            if row["origin"] == "synthetic-doc-informed":
+                self.assertTrue(set(row["source_ids"]) <= ids)
+                self.assertIn("References:", row["messages"][-1]["content"])
+
+    def test_dataset_manifest_matches_files(self):
+        from common import digest
+        manifest = json.loads((ROOT / "data/manifest.json").read_text())
+        for split, rows in (("train", self.train), ("validation", self.val)):
+            self.assertEqual(manifest["splits"][split]["count"], len(rows))
+            self.assertEqual(manifest["splits"][split]["sha256"], digest(ROOT / f"data/{split}.jsonl"))
+        for path, expected in manifest["input_sha256"].items():
+            self.assertEqual(digest(ROOT / path), expected)
 
 
 if __name__ == "__main__":

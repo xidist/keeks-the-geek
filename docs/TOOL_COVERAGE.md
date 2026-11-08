@@ -1,0 +1,105 @@
+# Tool coverage
+
+- Python: `tool-python`; 1 training primer; expert review and GPU training pending.
+- Java: `tool-java`; 1 training primer; expert review and GPU training pending.
+- C++: `tool-cpp`; 1 training primer; expert review and GPU training pending.
+- C#: `tool-csharp`; 1 training primer; expert review and GPU training pending.
+- OCaml: `tool-ocaml`; 1 training primer; expert review and GPU training pending.
+- JavaScript: `tool-javascript`; 1 training primer; expert review and GPU training pending.
+- MATLAB: `tool-matlab`; 1 training primer; expert review and GPU training pending.
+- R: `tool-r`; 1 training primer; expert review and GPU training pending.
+- SQL: `tool-sql`; 1 training primer; expert review and GPU training pending.
+- HTML: `tool-html`; 1 training primer; expert review and GPU training pending.
+- CSS: `tool-css`; 1 training primer; expert review and GPU training pending.
+- GLSL: `tool-glsl`; 1 training primer; expert review and GPU training pending.
+- Swift: `tool-swift`; 1 training primer; expert review and GPU training pending.
+- pydub: `tool-pydub`; 1 training primer; expert review and GPU training pending.
+- librosa: `tool-librosa`; 1 training primer; expert review and GPU training pending.
+- soundfile: `tool-soundfile`; 1 training primer; expert review and GPU training pending.
+- pygame: `tool-pygame`; 1 training primer; expert review and GPU training pending.
+- pygame.mixer: `tool-pygame-mixer`; 1 training primer; expert review and GPU training pending.
+- Pillow (PIL): `tool-pillow-pil`; 1 training primer; expert review and GPU training pending.
+- OpenGL: `tool-opengl`; 1 training primer; expert review and GPU training pending.
+- matplotlib: `tool-matplotlib`; 1 training primer; expert review and GPU training pending.
+- OpenCV: `tool-opencv`; 1 training primer; expert review and GPU training pending.
+- NumPy: `tool-numpy`; 1 training primer; expert review and GPU training pending.
+- Pandas: `tool-pandas`; 1 training primer; expert review and GPU training pending.
+- scikit-learn: `tool-scikit-learn`; 1 training primer; expert review and GPU training pending.
+- MNE: `tool-mne`; 1 training primer; expert review and GPU training pending.
+- PsychoPy: `tool-psychopy`; 1 training primer; expert review and GPU training pending.
+- MediaPipe: `tool-mediapipe`; 1 training primer; expert review and GPU training pending.
+- PyTorch: `tool-pytorch`; 1 training primer; expert review and GPU training pending.
+- TensorFlow: `tool-tensorflow`; 1 training primer; expert review and GPU training pending.
+- Hugging Face Transformers: `tool-hugging-face-transformers`; 1 training primer; expert review and GPU training pending.
+- Hugging Face datasets: `tool-hugging-face-datasets`; 1 training primer; expert review and GPU training pending.
+- MLflow: `tool-mlflow`; 1 training primer; expert review and GPU training pending.
+- Trainer: `tool-trainer`; 1 training primer; expert review and GPU training pending.
+- AutoTokenizer: `tool-autotokenizer`; 1 training primer; expert review and GPU training pending.
+- AutoModelForCausalLM: `tool-automodelforcausallm`; 1 training primer; expert review and GPU training pending.
+- Jupyter: `tool-jupyter`; 1 training primer; expert review and GPU training pending.
+- Ollama: `tool-ollama`; 1 training primer; expert review and GPU training pending.
+- DeepSeek: `tool-deepseek`; 1 training primer; expert review and GPU training pending.
+- WizardCoder: `tool-wizardcoder`; 1 training primer; expert review and GPU training pending.
+- Vicuna: `tool-vicuna`; 1 training primer; expert review and GPU training pending.
+- BeautifulSoup (bs4): `tool-beautifulsoup-bs4`; 1 training primer; expert review and GPU training pending.
+- Scrapy: `tool-scrapy`; 1 training primer; expert review and GPU training pending.
+- Readability-lxml: `tool-readability-lxml`; 1 training primer; expert review and GPU training pending.
+- requests: `tool-requests`; 1 training primer; expert review and GPU training pending.
+- PyPDF2: `tool-pypdf2`; 1 training primer; expert review and GPU training pending.
+- pdfminer: `tool-pdfminer`; 1 training primer; expert review and GPU training pending.
+- TouchDesigner: `tool-touchdesigner`; 1 training primer; expert review and GPU training pending.
+- Hydra: `tool-hydra`; 1 training primer; expert review and GPU training pending.
+- Processing: `tool-processing`; 1 training primer; expert review and GPU training pending.
+- p5.js: `tool-p5-js`; 1 training primer; expert review and GPU training pending.
+- Three.js: `tool-three-js`; 1 training primer; expert review and GPU training pending.
+- D3.js: `tool-d3-js`; 1 training primer; expert review and GPU training pending.
+- WebGL: `tool-webgl`; 1 training primer; expert review and GPU training pending.
+- OpenFrameworks (ofx): `tool-openframeworks-ofx`; 1 training primer; expert review and GPU training pending.
+- Blender: `tool-blender`; 1 training primer; expert review and GPU training pending.
+- Houdini: `tool-houdini`; 1 training primer; expert review and GPU training pending.
+- parallax.js: `tool-parallax-js`; 1 training primer; expert review and GPU training pending.
+- Web MIDI: `tool-web-midi`; 1 training primer; expert review and GPU training pending.
+- MediaPipe TouchDesigner plugin: `tool-mediapipe-touchdesigner-plugin`; 1 training primer; expert review and GPU training pending.
+- TidalCycles: `tool-tidalcycles`; 1 training primer; expert review and GPU training pending.
+- Strudel: `tool-strudel`; 1 training primer; expert review and GPU training pending.
+- Gibber: `tool-gibber`; 1 training primer; expert review and GPU training pending.
+- Glicol: `tool-glicol`; 1 training primer; expert review and GPU training pending.
+- Shadertoy: `tool-shadertoy`; 1 training primer; expert review and GPU training pending.
+- GLSL Sandbox: `tool-glsl-sandbox`; 1 training primer; expert review and GPU training pending.
+- p5live: `tool-p5live`; 1 training primer; expert review and GPU training pending.
+- OpenProcessing: `tool-openprocessing`; 1 training primer; expert review and GPU training pending.
+- Ableton Live: `tool-ableton-live`; 1 training primer; expert review and GPU training pending.
+- Max for Live: `tool-max-for-live`; 1 training primer; expert review and GPU training pending.
+- Logic Pro: `tool-logic-pro`; 1 training primer; expert review and GPU training pending.
+- Kontakt: `tool-kontakt`; 1 training primer; expert review and GPU training pending.
+- TAL-Sampler: `tool-tal-sampler`; 1 training primer; expert review and GPU training pending.
+- Jam Origin MIDI Guitar 2: `tool-jam-origin-midi-guitar-2`; 1 training primer; expert review and GPU training pending.
+- Gradio: `tool-gradio`; 1 training primer; expert review and GPU training pending.
+- Streamlit: `tool-streamlit`; 1 training primer; expert review and GPU training pending.
+- FastAPI: `tool-fastapi`; 1 training primer; expert review and GPU training pending.
+- Node.js: `tool-node-js`; 1 training primer; expert review and GPU training pending.
+- Flutter: `tool-flutter`; 1 training primer; expert review and GPU training pending.
+- React Native: `tool-react-native`; 1 training primer; expert review and GPU training pending.
+- WebSocket: `tool-websocket`; 1 training primer; expert review and GPU training pending.
+- MQTT: `tool-mqtt`; 1 training primer; expert review and GPU training pending.
+- ONNX: `tool-onnx`; 1 training primer; expert review and GPU training pending.
+- TensorRT: `tool-tensorrt`; 1 training primer; expert review and GPU training pending.
+- Conda: `tool-conda`; 1 training primer; expert review and GPU training pending.
+- Anaconda: `tool-anaconda`; 1 training primer; expert review and GPU training pending.
+- Git: `tool-git`; 1 training primer; expert review and GPU training pending.
+- GitHub: `tool-github`; 1 training primer; expert review and GPU training pending.
+- Docker: `tool-docker`; 1 training primer; expert review and GPU training pending.
+- Azure: `tool-azure`; 1 training primer; expert review and GPU training pending.
+- OpenAI: `tool-openai`; 1 training primer; expert review and GPU training pending.
+- .NET: `tool-net`; 1 training primer; expert review and GPU training pending.
+- Kusto Query Language: `tool-kusto-query-language`; 1 training primer; expert review and GPU training pending.
+- gRPC: `tool-grpc`; 1 training primer; expert review and GPU training pending.
+- REST APIs: `tool-rest-apis`; 1 training primer; expert review and GPU training pending.
+- OBS: `tool-obs`; 1 training primer; expert review and GPU training pending.
+- NDI: `tool-ndi`; 1 training primer; expert review and GPU training pending.
+- OBS Camera: `tool-obs-camera`; 1 training primer; expert review and GPU training pending.
+- MIDI: `tool-midi`; 1 training primer; expert review and GPU training pending.
+- OSC: `tool-osc`; 1 training primer; expert review and GPU training pending.
+- SDFs (signed distance functions): `tool-sdfs-signed-distance-functions`; 1 training primer; expert review and GPU training pending.
+
+These are original conceptual summaries. No target-runtime execution is claimed. Documentation orientation checked during this update: https://huggingface.co/docs/transformers/training , https://unsloth.ai/docs/get-started/fine-tuning-llms-guide , https://librosa.org/doc/latest/index.html , https://mne.tools/stable/index.html , https://docs.pytorch.org/tutorials/beginner/basics/intro.html , https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API . These references do not imply that all tool-specific APIs were checked.

@@ -113,4 +113,7 @@
   const canvas=document.getElementById("wave"), context=canvas.getContext("2d"), frequency=document.getElementById("frequency");
   function draw() {const n=Number(frequency.value);document.getElementById("wave-value").textContent=n.toFixed(1).replace(/\.0$/,"")+" cycles";if(!context)return;context.clearRect(0,0,canvas.width,canvas.height);context.beginPath();for(let x=0;x<=canvas.width;x++){const y=canvas.height/2+Math.sin(x/canvas.width*n*2*Math.PI)*53;if(x===0)context.moveTo(x,y);else context.lineTo(x,y);}context.strokeStyle="#c4f586";context.lineWidth=3;context.stroke();}
   frequency.addEventListener("input",draw);draw();welcome();
+  const selectedTool = new URLSearchParams(location.search).get("tool");
+  if (selectedTool && notes.some(n => n.id === selectedTool)) ask(notes.find(n => n.id === selectedTool).prompt);
 })();
+

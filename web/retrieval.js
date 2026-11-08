@@ -4,12 +4,14 @@
   const stop = new Set("a an the is are was were how what why can i me my do does to of in on for and it you your with make making about explain show could should get want know tell some something please help at as from that this docs documentation".split(" "));
   const aliases = {ffts:"fft", fourier:"fft", synth:"synthesizer", synths:"synthesizer", synthesizers:"synthesizer", synthesis:"synthesizer", drums:"drum", drumheads:"drumhead", signals:"signal", visuals:"visual", coding:"code", livecoding:"livecode", programming:"code", guitars:"guitar", oscillators:"oscillator", harmonics:"harmonic", td:"touchdesigner", tidal:"tidalcycles", p5js:"p5", samples:"sample", sampling:"sample"};
   function normalize(text) {
-    return text.toLowerCase().replace(/tidal\s+cycles/g,"tidalcycles").replace(/touch\s+designer/g,"touchdesigner").replace(/live\s+coding/g,"livecode").replace(/p5\.js/g,"p5").replace(/[’']/g,"").trim();
+    return text.toLowerCase().replace(/c\+\+/g,"cplusplus").replace(/c#/g,"csharp").replace(/\.net/g,"dotnet").replace(/tidal\s+cycles/g,"tidalcycles").replace(/touch\s+designer/g,"touchdesigner").replace(/live\s+coding/g,"livecode").replace(/p5\.js/g,"p5").replace(/[’']/g,"").trim();
   }
   function terms(text) { return (normalize(text).match(/[a-z0-9]+/g)||[]).map(w=>aliases[w]||w).filter(w=>w.length>1&&!stop.has(w)); }
   const platformTopics = new Set(["tidalcycles","hydra","touchdesigner","gibber","chuck"]);
   function retrieve(question, notes) {
     if (/^(hi|hello|hey|hey keeks|hi keeks)[!. ]*$/i.test(question.trim())) return {answer:"Hey! Try drum synth, TidalCycles, Hydra, TD, Gibber, ChucK, sampling, graphics, or FFTs."};
+    const exact = notes.find(n => [n.prompt, ...(n.aliases || [])].some(s => normalize(s) === normalize(question)));
+    if (exact) return exact;
     const query = [...new Set(terms(question))];
     if (!query.length) return null;
     const requestedPlatforms = query.filter(t=>platformTopics.has(t));
@@ -35,3 +37,4 @@
   if (typeof module!=="undefined" && module.exports) module.exports=api;
   else root.KEEKS_RETRIEVAL=api;
 })(typeof window!=="undefined"?window:globalThis);
+

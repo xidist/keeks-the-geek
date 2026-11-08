@@ -6,7 +6,7 @@
 
 ## Current status
 
-The website is an implemented **starter-note chatbot demo**, published on xidist.xyz. It searches 48 synthetic reference answers in the browser. It is not currently generating answers with a fine-tuned LLM.
+The website is an implemented **starter-note chatbot demo**, published on xidist.xyz. It searches 84 authored reference answers in the browser. It is not currently generating answers with a fine-tuned LLM.
 
 This repository implements the fine-tuning, evaluation and serving pipeline. **Training has not run, no trained adapter is included, and no improvement metrics are claimed.** CPU data/pipeline checks and browser checks can run without a GPU; CUDA training and model serving still need a GPU execution test.
 
@@ -17,13 +17,23 @@ This repository implements the fine-tuning, evaluation and serving pipeline. **T
 | `web/` | Responsive chatbot, topic prompts, searchable demo notes, model connection |
 | `notebooks/Keeks_the_Geek_Colab.ipynb` | Guided GPU training and download workflow |
 | `data/seeds.json` | 64 authored synthetic conversations across eight areas |
-| `data/train.jsonl` | 96 examples: 48 authored + 48 calculated numerical examples |
-| `data/validation.jsonl` | 16 separate topic groups |
+| `data/creative_seeds.json` | 45 documentation-informed examples: 36 training + 9 validation |
+| `data/creative_sources.json` | 33 official documentation and maintainer reference pages |
+| `data/train.jsonl` | 132 examples: 84 authored + 48 calculated numerical examples |
+| `data/validation.jsonl` | 25 held-out exercise groups |
 | `scripts/train.py` | Unsloth QLoRA, explicit response-only loss, adapter export |
 | `scripts/generate.py` | Identical base/adapter evaluation generation or one-question chat |
 | `scripts/compare.py` | Blinded human-review sheet and narrow numerical checks |
-| `eval/prompts.jsonl` | 16 held-out prompts, including six numeric checks |
+| `eval/prompts.jsonl` | 25 held-out prompts, including six numeric checks |
 | `api/server.py` | GPU-backed FastAPI server requiring a completed adapter run |
+
+## Creative coding expansion — November 8, 2026
+
+The pilot data now covers **TidalCycles, Hydra, TouchDesigner, Gibber, ChucK, drum sampling, synthesis, live coding and p5.js/GLSL graphics**. New examples carry source IDs, review status and execution status. They are original instructional answers informed by the linked docs, not entire manuals copied into training. The corpus is deliberately small and does not yet establish coverage of every API.
+
+The demo recognizes short requests such as `drum synth`, `TD FFT`, `Hydra audio` and `ChucK sample`. Code blocks and documentation links are rendered as inert content. An explicit platform name constrains matching to that platform. It remains authored-note retrieval, not model generation or a live crawl of documentation.
+
+See [the source catalog](docs/CREATIVE_CODING.md), and review the samples before using the notebook. The notebook rebuilds the expanded data automatically. The latest CPU and JavaScript checks are documented in [VALIDATION.md](docs/VALIDATION.md).
 
 ## Try the chatbot locally
 
@@ -49,6 +59,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 python scripts/build_dataset.py
 python -m unittest discover -s tests -v
+# Optional frontend regression suite (requires Node): node tests/test_retrieval.js
 python scripts/generate.py --output outputs/base_eval.jsonl
 python scripts/train.py --max-steps 2 --output-dir outputs/smoke
 python scripts/train.py --output-dir outputs/full

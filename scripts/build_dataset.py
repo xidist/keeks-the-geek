@@ -10,7 +10,8 @@ def build():
     seeds = json.loads((ROOT / "data/seeds.json").read_text())
     creative = json.loads((ROOT / "data/creative_seeds.json").read_text())
     sources = {s["id"]: s for s in json.loads((ROOT / "data/creative_sources.json").read_text())}
-    seeds += creative
+    tools = json.loads((ROOT / "data/tool_seeds.json").read_text())
+    seeds += creative + tools
     splits = {"train": [], "validation": []}
     def add(split, identifier, group, topic, prompt, answer, origin, calculation=None):
         row = {"id": identifier, "group": group, "topic": topic, "origin": origin,
@@ -26,6 +27,8 @@ def build():
         if refs:
             answer += "\n\nReferences:\n" + "\n".join(s["url"] for s in refs)
         add(row["split"], row["id"], row["group"], row["topic"], row["prompt"], answer, row.get("origin", "synthetic-authored"))
+        if row.get("review_status"):
+            splits[row["split"]][-1].update(review_status=row["review_status"], execution_status=row.get("execution_status", "not-run"))
         if refs:
             splits[row["split"]][-1].update(source_ids=row["source_ids"],
                 review_status=row["review_status"], execution_status=row["execution_status"])
@@ -69,8 +72,8 @@ def build():
     (ROOT / "web/notes.js").write_text("// Synthetic starter notes, not model generations. Built from data/seeds.json.\nwindow.KEEKS_NOTES = " + json.dumps(demo, ensure_ascii=False) + ";\n", encoding="utf-8")
     manifest = {"synthetic": True, "human_expert_reviewed": False, "seed": cfg["seed"],
                 "split_policy": "Explicit exercise-group holdout; numerical variants remain in train. Related concepts and source pages may occur in both splits; this is not source-disjoint evaluation.",
-                "creative_examples": len(creative), "demo_notes": len(demo), "documentation_sources": len(sources),
-                "input_sha256": {p: digest(ROOT / p) for p in ("data/seeds.json", "data/creative_seeds.json", "data/creative_sources.json")},
+                "tool_examples": len(tools), "creative_examples": len(creative), "demo_notes": len(demo), "documentation_sources": len(sources),
+                "input_sha256": {p: digest(ROOT / p) for p in ("data/seeds.json", "data/creative_seeds.json", "data/creative_sources.json", "data/tool_seeds.json", "data/tool_catalog.json")},
                 "splits": {name: {"count": len(rows), "topics": dict(Counter(r["topic"] for r in rows)),
                                   "sha256": digest(ROOT / f"data/{name}.jsonl")} for name, rows in splits.items()}}
     (ROOT / "data/manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
@@ -79,3 +82,4 @@ def build():
 
 if __name__ == "__main__":
     build()
+

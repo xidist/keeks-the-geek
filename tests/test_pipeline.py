@@ -25,13 +25,23 @@ class PipelineTests(unittest.TestCase):
 
     def test_schema_counts_and_groups(self):
         validate_rows(self.train + self.val)
-        self.assertEqual((len(self.train), len(self.val)), (132, 25))
+        self.assertEqual((len(self.train), len(self.val)), (233, 25))
         self.assertFalse({r["group"] for r in self.train} & {r["group"] for r in self.val})
 
     def test_every_topic_in_both_splits(self):
         expected = {"music", "dsp", "physics", "ai", "programming", "graphics", "drums", "arduino", "tidalcycles", "hydra", "touchdesigner", "gibber", "chuck", "sampling", "synthesis", "livecoding"}
-        self.assertEqual({r["topic"] for r in self.train}, expected)
+        self.assertTrue(expected <= {r["topic"] for r in self.train})
         self.assertEqual({r["topic"] for r in self.val}, expected)
+
+    def test_tool_catalog_coverage(self):
+        catalog = json.loads((ROOT / "data/tool_catalog.json").read_text())
+        seeds = json.loads((ROOT / "data/tool_seeds.json").read_text())
+        self.assertEqual(len(catalog), 101)
+        self.assertEqual(len({x["id"] for x in catalog}), 101)
+        self.assertEqual({x["id"] for x in catalog}, {x["id"] for x in seeds})
+        self.assertTrue({x["id"] for x in seeds} <= {x["id"] for x in self.train})
+        self.assertTrue(all("pending" in x["status"] for x in catalog))
+        self.assertNotEqual(next(x["id"] for x in catalog if x["name"] == "C++"), next(x["id"] for x in catalog if x["name"] == "C#"))
 
     def test_numeric_answers(self):
         for row in self.train:
@@ -99,7 +109,7 @@ class PipelineTests(unittest.TestCase):
     def test_demo_only_uses_training_seeds(self):
         text = (ROOT / "web/notes.js").read_text()
         rows = json.loads(text.split("window.KEEKS_NOTES = ",1)[1].rstrip(";\n"))
-        self.assertEqual(len(rows),84)
+        self.assertEqual(len(rows),185)
         self.assertTrue({r["id"] for r in rows} <= {r["id"] for r in self.train})
         self.assertFalse({r["id"] for r in rows} & {r["id"] for r in self.val})
 
@@ -131,3 +141,4 @@ class PipelineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

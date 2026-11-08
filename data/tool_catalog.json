@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "tool-python",
+    "name": "Python",
+    "category": "Languages & web",
+    "summary": "Prototype an offline audio-analysis pipeline with arrays and functions; separate file I/O from analysis so each can be tested.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-java",
+    "name": "Java",
+    "category": "Languages & web",
+    "summary": "Build a typed MIDI-event model; distinguish managed application code from a hard real-time audio callback.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-cpp",
+    "name": "C++",
+    "category": "Languages & web",
+    "summary": "Implement a sample-processing loop with preallocated buffers; avoid allocation and blocking locks in the audio callback.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-csharp",
+    "name": "C#",
+    "category": "Languages & web",
+    "summary": "Build a .NET control interface for an audio service; keep UI work off the audio-processing thread.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-ocaml",
+    "name": "OCaml",
+    "category": "Languages & web",
+    "summary": "Represent musical events with algebraic data types and pattern matching; make invalid event states explicit.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-javascript",
+    "name": "JavaScript",
+    "category": "Languages & web",
+    "summary": "Connect browser controls to an audio graph; distinguish event-loop timing from audio-clock scheduling.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-matlab",
+    "name": "MATLAB",
+    "category": "Languages & web",
+    "summary": "Explore an FFT and plot its frequency axis in Hz; record sample rate, transform size and window.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-r",
+    "name": "R",
+    "category": "Languages & web",
+    "summary": "Analyze repeated audio experiments with tidy tables and uncertainty estimates; distinguish observations from independent subjects.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-sql",
+    "name": "SQL",
+    "category": "Languages & web",
+    "summary": "Store take metadata and query recordings by sample rate; parameterize user input rather than concatenating SQL.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-html",
+    "name": "HTML",
+    "category": "Languages & web",
+    "summary": "Structure a chatbot with labels, headings and navigation; use semantic controls rather than clickable divs.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-css",
+    "name": "CSS",
+    "category": "Languages & web",
+    "summary": "Style responsive controls and readable code blocks; preserve keyboard focus and contrast.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-glsl",
+    "name": "GLSL",
+    "category": "Languages & web",
+    "summary": "Write a fragment shader that maps coordinates to color; verify shader version and coordinate conventions.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-swift",
+    "name": "Swift",
+    "category": "Languages & web",
+    "summary": "Build a native Apple interface for an audio experiment; separate UI state from audio-engine state.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pydub",
+    "name": "pydub",
+    "category": "Python, audio & science",
+    "summary": "Edit and concatenate offline audio segments; check format decoding dependencies and do not confuse milliseconds with sample indices.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-librosa",
+    "name": "librosa",
+    "category": "Python, audio & science",
+    "summary": "Extract music and audio features; verify sample rate and mono settings at loading and keep the feature time axis explicit.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-soundfile",
+    "name": "soundfile",
+    "category": "Python, audio & science",
+    "summary": "Read and write audio arrays using libsndfile; preserve sample rate, channel shape and output subtype.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pygame",
+    "name": "pygame",
+    "category": "Python, audio & science",
+    "summary": "Prototype a visual rhythm game with an event loop; keep simulation time independent of frame rate.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pygame-mixer",
+    "name": "pygame.mixer",
+    "category": "Python, audio & science",
+    "summary": "Play sample-based sounds in a pygame application; mixer buffer size trades responsiveness against underrun tolerance.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pillow-pil",
+    "name": "Pillow (PIL)",
+    "category": "Python, audio & science",
+    "summary": "Load, resize and composite raster images; distinguish RGB from RGBA and preserve alpha deliberately.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-opengl",
+    "name": "OpenGL",
+    "category": "Python, audio & science",
+    "summary": "Render geometry with GPU buffers and shaders; an OpenGL context is required and calls must match its supported version.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-matplotlib",
+    "name": "matplotlib",
+    "category": "Python, audio & science",
+    "summary": "Plot waveform and spectrum diagnostics; label units and distinguish linear magnitude from decibels.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-opencv",
+    "name": "OpenCV",
+    "category": "Python, audio & science",
+    "summary": "Process camera frames for interactive control; verify BGR/RGB order and capture timestamps before measuring latency.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-numpy",
+    "name": "NumPy",
+    "category": "Python, audio & science",
+    "summary": "Represent samples as arrays and compute numerical transforms; choose axis and dtype explicitly for multichannel audio.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pandas",
+    "name": "Pandas",
+    "category": "Python, audio & science",
+    "summary": "Join recording metadata and feature tables; validate join keys to avoid accidentally duplicating observations.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-scikit-learn",
+    "name": "scikit-learn",
+    "category": "Python, audio & science",
+    "summary": "Train a baseline classifier on audio features; split by recording or subject before fitting preprocessing to avoid leakage.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-mne",
+    "name": "MNE",
+    "category": "Python, audio & science",
+    "summary": "Analyze neurophysiological recordings such as EEG or MEG; preserve channel metadata, units and event timing. This is research analysis, not a diagnosis.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-psychopy",
+    "name": "PsychoPy",
+    "category": "Python, audio & science",
+    "summary": "Design a controlled perception experiment; measure actual display and audio timing on the target hardware.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-mediapipe",
+    "name": "MediaPipe",
+    "category": "Python, audio & science",
+    "summary": "Estimate landmarks from camera frames for musical control; smooth noisy coordinates and handle missing detections.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pytorch",
+    "name": "PyTorch",
+    "category": "AI & model training",
+    "summary": "Build tensor-based models and training loops; separate training and evaluation modes and manage device placement explicitly.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-tensorflow",
+    "name": "TensorFlow",
+    "category": "AI & model training",
+    "summary": "Build and train tensor-based models; verify shape, dtype and preprocessing consistency between training and inference.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-hugging-face-transformers",
+    "name": "Hugging Face Transformers",
+    "category": "AI & model training",
+    "summary": "Load transformer architectures and tokenizers; match the model revision and native chat template across training and inference.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-hugging-face-datasets",
+    "name": "Hugging Face datasets",
+    "category": "AI & model training",
+    "summary": "Load and transform training records; keep provenance and group-based split rules through mapping operations.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-mlflow",
+    "name": "MLflow",
+    "category": "AI & model training",
+    "summary": "Track model experiments, parameters and artifacts; log dataset and code versions alongside metrics.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-trainer",
+    "name": "Trainer",
+    "category": "AI & model training",
+    "summary": "Use the Hugging Face training loop abstraction; check labels and data collator behavior rather than assuming response-only loss is automatic.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-autotokenizer",
+    "name": "AutoTokenizer",
+    "category": "AI & model training",
+    "summary": "Load the tokenizer associated with a model; inspect pad tokens, chat formatting and truncation behavior.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-automodelforcausallm",
+    "name": "AutoModelForCausalLM",
+    "category": "AI & model training",
+    "summary": "Load an autoregressive language model architecture; model loading alone does not fine-tune it or create a chat template.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-jupyter",
+    "name": "Jupyter",
+    "category": "AI & model training",
+    "summary": "Explore data and experiments in notebooks; restart and run all cells to expose hidden execution-order dependencies.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-ollama",
+    "name": "Ollama",
+    "category": "AI & model training",
+    "summary": "Run supported language models locally; inference with an imported model is distinct from training a new adapter.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-deepseek",
+    "name": "DeepSeek",
+    "category": "AI & model training",
+    "summary": "Treat this as a model family or provider name, not one fixed architecture; request the exact model ID, revision and license before choosing a training recipe.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-wizardcoder",
+    "name": "WizardCoder",
+    "category": "AI & model training",
+    "summary": "Treat this as a code-model family; inspect the exact checkpoint, base model and license instead of assuming all variants share one configuration.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-vicuna",
+    "name": "Vicuna",
+    "category": "AI & model training",
+    "summary": "Treat this as a chat-model family; verify checkpoint-specific conversation formatting and use terms before deployment.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-beautifulsoup-bs4",
+    "name": "BeautifulSoup (bs4)",
+    "category": "Extraction & documents",
+    "summary": "Parse HTML and select document elements; it does not execute page JavaScript or fetch pages by itself.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-scrapy",
+    "name": "Scrapy",
+    "category": "Extraction & documents",
+    "summary": "Organize crawls with spiders and item pipelines; respect access rules, throttle requests and retain source URLs.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-readability-lxml",
+    "name": "Readability-lxml",
+    "category": "Extraction & documents",
+    "summary": "Extract main article content from HTML; inspect outputs because navigation removal can also discard useful code or tables.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-requests",
+    "name": "requests",
+    "category": "Extraction & documents",
+    "summary": "Fetch HTTP resources from Python; set timeouts, handle status codes and keep credentials out of logs.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pypdf2",
+    "name": "PyPDF2",
+    "category": "Extraction & documents",
+    "summary": "Work with PDF pages and embedded text; scanned image pages need a separate OCR stage, and extraction order may differ from reading order.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-pdfminer",
+    "name": "pdfminer",
+    "category": "Extraction & documents",
+    "summary": "Extract text and layout from PDFs; inspect columns, ligatures and code indentation before creating training examples.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-touchdesigner",
+    "name": "TouchDesigner",
+    "category": "Creative graphics",
+    "summary": "Connect CHOP, TOP and other operators for interactive audiovisual work; verify whether control channels and audio channels use compatible rates.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-hydra",
+    "name": "Hydra",
+    "category": "Creative graphics",
+    "summary": "Compose live-coded visual transformations; keep browser performance and audio-input permissions separate from shader syntax.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-processing",
+    "name": "Processing",
+    "category": "Creative graphics",
+    "summary": "Sketch interactive graphics with a draw loop; distinguish the Processing Java environment from p5.js in a browser.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-p5-js",
+    "name": "p5.js",
+    "category": "Creative graphics",
+    "summary": "Build browser sketches with setup and draw; separate audio timing from animation frame timing.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-three-js",
+    "name": "Three.js",
+    "category": "Creative graphics",
+    "summary": "Construct a browser 3D scene with cameras, geometry and materials; dispose GPU resources when replacing scenes.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-d3-js",
+    "name": "D3.js",
+    "category": "Creative graphics",
+    "summary": "Bind structured data to visual elements; choose scales and axes that accurately represent units and domains.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-webgl",
+    "name": "WebGL",
+    "category": "Creative graphics",
+    "summary": "Render through a browser GPU API; check context support and handle context loss rather than assuming a persistent renderer.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-openframeworks-ofx",
+    "name": "OpenFrameworks (ofx)",
+    "category": "Creative graphics",
+    "summary": "Build C++ creative applications with openFrameworks; ofx names typically identify addons whose compatibility must be checked separately.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-blender",
+    "name": "Blender",
+    "category": "Creative graphics",
+    "summary": "Model and animate 3D scenes; distinguish rendering, geometry processing and scripting workloads when planning performance.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-houdini",
+    "name": "Houdini",
+    "category": "Creative graphics",
+    "summary": "Build procedural geometry networks; cache expensive stages and record parameters so results can be reproduced.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-parallax-js",
+    "name": "parallax.js",
+    "category": "Creative graphics",
+    "summary": "Add depth-like pointer or motion effects; confirm the exact package because similarly named projects have different APIs.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-web-midi",
+    "name": "Web MIDI",
+    "category": "Creative graphics",
+    "summary": "Exchange MIDI messages with browser-accessible devices; feature-detect support and handle permission denial. MIDI events do not carry recorded audio.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-mediapipe-touchdesigner-plugin",
+    "name": "MediaPipe TouchDesigner plugin",
+    "category": "Creative graphics",
+    "summary": "Bridge landmark tracking into TouchDesigner; request the exact plugin repository and release before giving component-specific setup instructions.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-tidalcycles",
+    "name": "TidalCycles",
+    "category": "Live coding & music",
+    "summary": "Describe musical patterns evaluated by a live-coding environment; confirm the sound engine and sample bank rather than assuming every sound name exists.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-strudel",
+    "name": "Strudel",
+    "category": "Live coding & music",
+    "summary": "Use a browser-based pattern environment for musical sequences; check sample availability and browser audio activation before debugging rhythm.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-gibber",
+    "name": "Gibber",
+    "category": "Live coding & music",
+    "summary": "Create live-coded musical sequences and visuals; identify the environment version before using instrument-specific syntax.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-glicol",
+    "name": "Glicol",
+    "category": "Live coding & music",
+    "summary": "Describe audio graphs with a live-coding language; check the active engine and available nodes before composing a patch.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-shadertoy",
+    "name": "Shadertoy",
+    "category": "Live coding & music",
+    "summary": "Prototype fragment-shader visuals in its host environment; host-provided uniforms and entry points need adaptation outside Shadertoy.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-glsl-sandbox",
+    "name": "GLSL Sandbox",
+    "category": "Live coding & music",
+    "summary": "Explore fragment shaders in a browser playground; verify its uniforms and GLSL dialect rather than pasting another host's shader unchanged.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-p5live",
+    "name": "p5live",
+    "category": "Live coding & music",
+    "summary": "Use a live-coding environment around p5.js; confirm the editor version and shared session behavior before collaborating.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-openprocessing",
+    "name": "OpenProcessing",
+    "category": "Live coding & music",
+    "summary": "Share and explore creative sketches; inspect each sketch's license and dependencies before reusing code in a dataset.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-ableton-live",
+    "name": "Ableton Live",
+    "category": "Live coding & music",
+    "summary": "Arrange and process musical clips and tracks; measure end-to-end latency with the chosen interface and buffer configuration.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-max-for-live",
+    "name": "Max for Live",
+    "category": "Live coding & music",
+    "summary": "Build Max devices inside Ableton Live; distinguish message-rate controls from signal-rate audio processing.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-logic-pro",
+    "name": "Logic Pro",
+    "category": "Live coding & music",
+    "summary": "Record, arrange and mix audio and MIDI; preserve project sample rate and distinguish software monitoring from direct monitoring.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-kontakt",
+    "name": "Kontakt",
+    "category": "Live coding & music",
+    "summary": "Create sample-based instruments; confirm the instrument edition and scripting support before planning automation.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-tal-sampler",
+    "name": "TAL-Sampler",
+    "category": "Live coding & music",
+    "summary": "Explore sampler-based synthesis and resampling character; compare matched output levels when evaluating sonic differences.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-jam-origin-midi-guitar-2",
+    "name": "Jam Origin MIDI Guitar 2",
+    "category": "Live coding & music",
+    "summary": "Convert guitar performance into MIDI control; tracking depends on input quality, pitch content and settings, so measure latency on your own setup.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-gradio",
+    "name": "Gradio",
+    "category": "Apps & deployment",
+    "summary": "Build a quick model-demo interface; keep model execution and secrets on the server and bound user requests.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-streamlit",
+    "name": "Streamlit",
+    "category": "Apps & deployment",
+    "summary": "Build an interactive Python data app; understand reruns and cache lifetime before loading a large model.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-fastapi",
+    "name": "FastAPI",
+    "category": "Apps & deployment",
+    "summary": "Expose validated Python HTTP endpoints; bound concurrent GPU requests and avoid blocking the event loop with synchronous work.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-node-js",
+    "name": "Node.js",
+    "category": "Apps & deployment",
+    "summary": "Run server-side JavaScript and tooling; move heavy CPU work away from the main event loop.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-flutter",
+    "name": "Flutter",
+    "category": "Apps & deployment",
+    "summary": "Build interfaces with Dart across supported platforms; check audio-plugin capabilities on each target platform.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-react-native",
+    "name": "React Native",
+    "category": "Apps & deployment",
+    "summary": "Build native mobile interfaces with React; test native audio and camera modules separately on each operating system.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-websocket",
+    "name": "WebSocket",
+    "category": "Apps & deployment",
+    "summary": "Maintain a bidirectional connection for live controls; include timestamps and reconnect handling rather than assuming delivery timing is constant.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-mqtt",
+    "name": "MQTT",
+    "category": "Apps & deployment",
+    "summary": "Publish and subscribe to device messages through a broker; choose QoS deliberately and do not treat broker delivery as hard real-time scheduling.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-onnx",
+    "name": "ONNX",
+    "category": "Apps & deployment",
+    "summary": "Represent supported model graphs for interchange; compare exported outputs against the original model on representative inputs.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-tensorrt",
+    "name": "TensorRT",
+    "category": "Apps & deployment",
+    "summary": "Optimize supported models for NVIDIA inference; verify precision, dynamic shapes and numerical accuracy on the target GPU.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-conda",
+    "name": "Conda",
+    "category": "Developer tools & integrations",
+    "summary": "Manage environments and package dependencies; export the environment used for an experiment rather than relying on the global installation.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-anaconda",
+    "name": "Anaconda",
+    "category": "Developer tools & integrations",
+    "summary": "Use a Python distribution and ecosystem of tools; distinguish the distribution from Conda, the environment manager.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-git",
+    "name": "Git",
+    "category": "Developer tools & integrations",
+    "summary": "Track source changes with commits; keep large datasets and credentials out of ordinary source history.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-github",
+    "name": "GitHub",
+    "category": "Developer tools & integrations",
+    "summary": "Host repositories and collaboration workflows; a published repository or passing workflow does not prove a model was trained.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-docker",
+    "name": "Docker",
+    "category": "Developer tools & integrations",
+    "summary": "Package an application environment in containers; GPU access and audio-device access still require host configuration.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-azure",
+    "name": "Azure",
+    "category": "Developer tools & integrations",
+    "summary": "Deploy cloud workloads with explicit resources and credentials; select the service and region before estimating capabilities or cost.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-openai",
+    "name": "OpenAI",
+    "category": "Developer tools & integrations",
+    "summary": "Treat this as a provider and API ecosystem; ask for the exact model and endpoint, and keep API keys server-side.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-net",
+    "name": ".NET",
+    "category": "Developer tools & integrations",
+    "summary": "Build applications with the .NET runtime and libraries; distinguish the runtime from C#, one language targeting it.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-kusto-query-language",
+    "name": "Kusto Query Language",
+    "category": "Developer tools & integrations",
+    "summary": "Query telemetry and time-series logs; check time windows and aggregation grain before interpreting latency percentiles.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-grpc",
+    "name": "gRPC",
+    "category": "Developer tools & integrations",
+    "summary": "Define typed remote services, often using Protocol Buffers; account for deadlines, streaming behavior and versioned schemas.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-rest-apis",
+    "name": "REST APIs",
+    "category": "Developer tools & integrations",
+    "summary": "Design resource-oriented HTTP interfaces; validate inputs and use explicit status codes and authentication boundaries.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-obs",
+    "name": "OBS",
+    "category": "Developer tools & integrations",
+    "summary": "Compose and stream audiovisual scenes; inspect audio routing, sync offsets and encoder load separately.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-ndi",
+    "name": "NDI",
+    "category": "Developer tools & integrations",
+    "summary": "Transport video and related media over a network; bandwidth, network conditions and buffering affect end-to-end latency.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-obs-camera",
+    "name": "OBS Camera",
+    "category": "Developer tools & integrations",
+    "summary": "Clarify whether this means OBS Virtual Camera or a specific phone-camera app; the name alone is insufficient for reliable setup instructions.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-midi",
+    "name": "MIDI",
+    "category": "Protocols & concepts",
+    "summary": "Represent musical performance and control events; note-on velocity is not an audio waveform and channel routing affects instrument selection.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-osc",
+    "name": "OSC",
+    "category": "Protocols & concepts",
+    "summary": "Send addressed control messages between applications; specify argument types, transport and timing expectations at both endpoints.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  },
+  {
+    "id": "tool-sdfs-signed-distance-functions",
+    "name": "SDFs (signed distance functions)",
+    "category": "Protocols & concepts",
+    "summary": "Represent distance to a surface with a sign convention; sphere tracing requires a valid distance bound, so arbitrary procedural fields can overshoot.",
+    "training_examples": 1,
+    "status": "Dataset prepared \u00b7 GPU training pending",
+    "review_status": "original introductory example; expert review pending",
+    "source_status": "No full documentation imported"
+  }
+]

@@ -1,0 +1,1416 @@
+[
+  {
+    "id": "tool-python",
+    "group": "tool-python",
+    "topic": "tool-python",
+    "split": "train",
+    "prompt": "How can I use Python in a creative technology project?",
+    "answer": "Python: Prototype an offline audio-analysis pipeline with arrays and functions; separate file I/O from analysis so each can be tested.",
+    "aliases": [
+      "Python"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-java",
+    "group": "tool-java",
+    "topic": "tool-java",
+    "split": "train",
+    "prompt": "How can I use Java in a creative technology project?",
+    "answer": "Java: Build a typed MIDI-event model; distinguish managed application code from a hard real-time audio callback.",
+    "aliases": [
+      "Java"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-cpp",
+    "group": "tool-cpp",
+    "topic": "tool-cpp",
+    "split": "train",
+    "prompt": "How can I use C++ in a creative technology project?",
+    "answer": "C++: Implement a sample-processing loop with preallocated buffers; avoid allocation and blocking locks in the audio callback.",
+    "aliases": [
+      "C++"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-csharp",
+    "group": "tool-csharp",
+    "topic": "tool-csharp",
+    "split": "train",
+    "prompt": "How can I use C# in a creative technology project?",
+    "answer": "C#: Build a .NET control interface for an audio service; keep UI work off the audio-processing thread.",
+    "aliases": [
+      "C#"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-ocaml",
+    "group": "tool-ocaml",
+    "topic": "tool-ocaml",
+    "split": "train",
+    "prompt": "How can I use OCaml in a creative technology project?",
+    "answer": "OCaml: Represent musical events with algebraic data types and pattern matching; make invalid event states explicit.",
+    "aliases": [
+      "OCaml"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-javascript",
+    "group": "tool-javascript",
+    "topic": "tool-javascript",
+    "split": "train",
+    "prompt": "How can I use JavaScript in a creative technology project?",
+    "answer": "JavaScript: Connect browser controls to an audio graph; distinguish event-loop timing from audio-clock scheduling.",
+    "aliases": [
+      "JavaScript"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-matlab",
+    "group": "tool-matlab",
+    "topic": "tool-matlab",
+    "split": "train",
+    "prompt": "How can I use MATLAB in a creative technology project?",
+    "answer": "MATLAB: Explore an FFT and plot its frequency axis in Hz; record sample rate, transform size and window.",
+    "aliases": [
+      "MATLAB"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-r",
+    "group": "tool-r",
+    "topic": "tool-r",
+    "split": "train",
+    "prompt": "How can I use R in a creative technology project?",
+    "answer": "R: Analyze repeated audio experiments with tidy tables and uncertainty estimates; distinguish observations from independent subjects.",
+    "aliases": [
+      "R"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-sql",
+    "group": "tool-sql",
+    "topic": "tool-sql",
+    "split": "train",
+    "prompt": "How can I use SQL in a creative technology project?",
+    "answer": "SQL: Store take metadata and query recordings by sample rate; parameterize user input rather than concatenating SQL.",
+    "aliases": [
+      "SQL"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-html",
+    "group": "tool-html",
+    "topic": "tool-html",
+    "split": "train",
+    "prompt": "How can I use HTML in a creative technology project?",
+    "answer": "HTML: Structure a chatbot with labels, headings and navigation; use semantic controls rather than clickable divs.",
+    "aliases": [
+      "HTML"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-css",
+    "group": "tool-css",
+    "topic": "tool-css",
+    "split": "train",
+    "prompt": "How can I use CSS in a creative technology project?",
+    "answer": "CSS: Style responsive controls and readable code blocks; preserve keyboard focus and contrast.",
+    "aliases": [
+      "CSS"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-glsl",
+    "group": "tool-glsl",
+    "topic": "tool-glsl",
+    "split": "train",
+    "prompt": "How can I use GLSL in a creative technology project?",
+    "answer": "GLSL: Write a fragment shader that maps coordinates to color; verify shader version and coordinate conventions.",
+    "aliases": [
+      "GLSL"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-swift",
+    "group": "tool-swift",
+    "topic": "tool-swift",
+    "split": "train",
+    "prompt": "How can I use Swift in a creative technology project?",
+    "answer": "Swift: Build a native Apple interface for an audio experiment; separate UI state from audio-engine state.",
+    "aliases": [
+      "Swift"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pydub",
+    "group": "tool-pydub",
+    "topic": "tool-pydub",
+    "split": "train",
+    "prompt": "How can I use pydub in a creative technology project?",
+    "answer": "pydub: Edit and concatenate offline audio segments; check format decoding dependencies and do not confuse milliseconds with sample indices.",
+    "aliases": [
+      "pydub"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-librosa",
+    "group": "tool-librosa",
+    "topic": "tool-librosa",
+    "split": "train",
+    "prompt": "How can I use librosa in a creative technology project?",
+    "answer": "librosa: Extract music and audio features; verify sample rate and mono settings at loading and keep the feature time axis explicit.",
+    "aliases": [
+      "librosa"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-soundfile",
+    "group": "tool-soundfile",
+    "topic": "tool-soundfile",
+    "split": "train",
+    "prompt": "How can I use soundfile in a creative technology project?",
+    "answer": "soundfile: Read and write audio arrays using libsndfile; preserve sample rate, channel shape and output subtype.",
+    "aliases": [
+      "soundfile"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pygame",
+    "group": "tool-pygame",
+    "topic": "tool-pygame",
+    "split": "train",
+    "prompt": "How can I use pygame in a creative technology project?",
+    "answer": "pygame: Prototype a visual rhythm game with an event loop; keep simulation time independent of frame rate.",
+    "aliases": [
+      "pygame"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pygame-mixer",
+    "group": "tool-pygame-mixer",
+    "topic": "tool-pygame-mixer",
+    "split": "train",
+    "prompt": "How can I use pygame.mixer in a creative technology project?",
+    "answer": "pygame.mixer: Play sample-based sounds in a pygame application; mixer buffer size trades responsiveness against underrun tolerance.",
+    "aliases": [
+      "pygame.mixer"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pillow-pil",
+    "group": "tool-pillow-pil",
+    "topic": "tool-pillow-pil",
+    "split": "train",
+    "prompt": "How can I use Pillow (PIL) in a creative technology project?",
+    "answer": "Pillow (PIL): Load, resize and composite raster images; distinguish RGB from RGBA and preserve alpha deliberately.",
+    "aliases": [
+      "Pillow (PIL)"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-opengl",
+    "group": "tool-opengl",
+    "topic": "tool-opengl",
+    "split": "train",
+    "prompt": "How can I use OpenGL in a creative technology project?",
+    "answer": "OpenGL: Render geometry with GPU buffers and shaders; an OpenGL context is required and calls must match its supported version.",
+    "aliases": [
+      "OpenGL"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-matplotlib",
+    "group": "tool-matplotlib",
+    "topic": "tool-matplotlib",
+    "split": "train",
+    "prompt": "How can I use matplotlib in a creative technology project?",
+    "answer": "matplotlib: Plot waveform and spectrum diagnostics; label units and distinguish linear magnitude from decibels.",
+    "aliases": [
+      "matplotlib"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-opencv",
+    "group": "tool-opencv",
+    "topic": "tool-opencv",
+    "split": "train",
+    "prompt": "How can I use OpenCV in a creative technology project?",
+    "answer": "OpenCV: Process camera frames for interactive control; verify BGR/RGB order and capture timestamps before measuring latency.",
+    "aliases": [
+      "OpenCV"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-numpy",
+    "group": "tool-numpy",
+    "topic": "tool-numpy",
+    "split": "train",
+    "prompt": "How can I use NumPy in a creative technology project?",
+    "answer": "NumPy: Represent samples as arrays and compute numerical transforms; choose axis and dtype explicitly for multichannel audio.",
+    "aliases": [
+      "NumPy"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pandas",
+    "group": "tool-pandas",
+    "topic": "tool-pandas",
+    "split": "train",
+    "prompt": "How can I use Pandas in a creative technology project?",
+    "answer": "Pandas: Join recording metadata and feature tables; validate join keys to avoid accidentally duplicating observations.",
+    "aliases": [
+      "Pandas"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-scikit-learn",
+    "group": "tool-scikit-learn",
+    "topic": "tool-scikit-learn",
+    "split": "train",
+    "prompt": "How can I use scikit-learn in a creative technology project?",
+    "answer": "scikit-learn: Train a baseline classifier on audio features; split by recording or subject before fitting preprocessing to avoid leakage.",
+    "aliases": [
+      "scikit-learn"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-mne",
+    "group": "tool-mne",
+    "topic": "tool-mne",
+    "split": "train",
+    "prompt": "How can I use MNE in a creative technology project?",
+    "answer": "MNE: Analyze neurophysiological recordings such as EEG or MEG; preserve channel metadata, units and event timing. This is research analysis, not a diagnosis.",
+    "aliases": [
+      "MNE"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-psychopy",
+    "group": "tool-psychopy",
+    "topic": "tool-psychopy",
+    "split": "train",
+    "prompt": "How can I use PsychoPy in a creative technology project?",
+    "answer": "PsychoPy: Design a controlled perception experiment; measure actual display and audio timing on the target hardware.",
+    "aliases": [
+      "PsychoPy"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-mediapipe",
+    "group": "tool-mediapipe",
+    "topic": "tool-mediapipe",
+    "split": "train",
+    "prompt": "How can I use MediaPipe in a creative technology project?",
+    "answer": "MediaPipe: Estimate landmarks from camera frames for musical control; smooth noisy coordinates and handle missing detections.",
+    "aliases": [
+      "MediaPipe"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pytorch",
+    "group": "tool-pytorch",
+    "topic": "tool-pytorch",
+    "split": "train",
+    "prompt": "How can I use PyTorch in a creative technology project?",
+    "answer": "PyTorch: Build tensor-based models and training loops; separate training and evaluation modes and manage device placement explicitly.",
+    "aliases": [
+      "PyTorch"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-tensorflow",
+    "group": "tool-tensorflow",
+    "topic": "tool-tensorflow",
+    "split": "train",
+    "prompt": "How can I use TensorFlow in a creative technology project?",
+    "answer": "TensorFlow: Build and train tensor-based models; verify shape, dtype and preprocessing consistency between training and inference.",
+    "aliases": [
+      "TensorFlow"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-hugging-face-transformers",
+    "group": "tool-hugging-face-transformers",
+    "topic": "tool-hugging-face-transformers",
+    "split": "train",
+    "prompt": "How can I use Hugging Face Transformers in a creative technology project?",
+    "answer": "Hugging Face Transformers: Load transformer architectures and tokenizers; match the model revision and native chat template across training and inference.",
+    "aliases": [
+      "Hugging Face Transformers"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-hugging-face-datasets",
+    "group": "tool-hugging-face-datasets",
+    "topic": "tool-hugging-face-datasets",
+    "split": "train",
+    "prompt": "How can I use Hugging Face datasets in a creative technology project?",
+    "answer": "Hugging Face datasets: Load and transform training records; keep provenance and group-based split rules through mapping operations.",
+    "aliases": [
+      "Hugging Face datasets"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-mlflow",
+    "group": "tool-mlflow",
+    "topic": "tool-mlflow",
+    "split": "train",
+    "prompt": "How can I use MLflow in a creative technology project?",
+    "answer": "MLflow: Track model experiments, parameters and artifacts; log dataset and code versions alongside metrics.",
+    "aliases": [
+      "MLflow"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-trainer",
+    "group": "tool-trainer",
+    "topic": "tool-trainer",
+    "split": "train",
+    "prompt": "How can I use Trainer in a creative technology project?",
+    "answer": "Trainer: Use the Hugging Face training loop abstraction; check labels and data collator behavior rather than assuming response-only loss is automatic.",
+    "aliases": [
+      "Trainer"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-autotokenizer",
+    "group": "tool-autotokenizer",
+    "topic": "tool-autotokenizer",
+    "split": "train",
+    "prompt": "How can I use AutoTokenizer in a creative technology project?",
+    "answer": "AutoTokenizer: Load the tokenizer associated with a model; inspect pad tokens, chat formatting and truncation behavior.",
+    "aliases": [
+      "AutoTokenizer"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-automodelforcausallm",
+    "group": "tool-automodelforcausallm",
+    "topic": "tool-automodelforcausallm",
+    "split": "train",
+    "prompt": "How can I use AutoModelForCausalLM in a creative technology project?",
+    "answer": "AutoModelForCausalLM: Load an autoregressive language model architecture; model loading alone does not fine-tune it or create a chat template.",
+    "aliases": [
+      "AutoModelForCausalLM"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-jupyter",
+    "group": "tool-jupyter",
+    "topic": "tool-jupyter",
+    "split": "train",
+    "prompt": "How can I use Jupyter in a creative technology project?",
+    "answer": "Jupyter: Explore data and experiments in notebooks; restart and run all cells to expose hidden execution-order dependencies.",
+    "aliases": [
+      "Jupyter"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-ollama",
+    "group": "tool-ollama",
+    "topic": "tool-ollama",
+    "split": "train",
+    "prompt": "How can I use Ollama in a creative technology project?",
+    "answer": "Ollama: Run supported language models locally; inference with an imported model is distinct from training a new adapter.",
+    "aliases": [
+      "Ollama"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-deepseek",
+    "group": "tool-deepseek",
+    "topic": "tool-deepseek",
+    "split": "train",
+    "prompt": "How can I use DeepSeek in a creative technology project?",
+    "answer": "DeepSeek: Treat this as a model family or provider name, not one fixed architecture; request the exact model ID, revision and license before choosing a training recipe.",
+    "aliases": [
+      "DeepSeek"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-wizardcoder",
+    "group": "tool-wizardcoder",
+    "topic": "tool-wizardcoder",
+    "split": "train",
+    "prompt": "How can I use WizardCoder in a creative technology project?",
+    "answer": "WizardCoder: Treat this as a code-model family; inspect the exact checkpoint, base model and license instead of assuming all variants share one configuration.",
+    "aliases": [
+      "WizardCoder"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-vicuna",
+    "group": "tool-vicuna",
+    "topic": "tool-vicuna",
+    "split": "train",
+    "prompt": "How can I use Vicuna in a creative technology project?",
+    "answer": "Vicuna: Treat this as a chat-model family; verify checkpoint-specific conversation formatting and use terms before deployment.",
+    "aliases": [
+      "Vicuna"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-beautifulsoup-bs4",
+    "group": "tool-beautifulsoup-bs4",
+    "topic": "tool-beautifulsoup-bs4",
+    "split": "train",
+    "prompt": "How can I use BeautifulSoup (bs4) in a creative technology project?",
+    "answer": "BeautifulSoup (bs4): Parse HTML and select document elements; it does not execute page JavaScript or fetch pages by itself.",
+    "aliases": [
+      "BeautifulSoup (bs4)"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-scrapy",
+    "group": "tool-scrapy",
+    "topic": "tool-scrapy",
+    "split": "train",
+    "prompt": "How can I use Scrapy in a creative technology project?",
+    "answer": "Scrapy: Organize crawls with spiders and item pipelines; respect access rules, throttle requests and retain source URLs.",
+    "aliases": [
+      "Scrapy"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-readability-lxml",
+    "group": "tool-readability-lxml",
+    "topic": "tool-readability-lxml",
+    "split": "train",
+    "prompt": "How can I use Readability-lxml in a creative technology project?",
+    "answer": "Readability-lxml: Extract main article content from HTML; inspect outputs because navigation removal can also discard useful code or tables.",
+    "aliases": [
+      "Readability-lxml"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-requests",
+    "group": "tool-requests",
+    "topic": "tool-requests",
+    "split": "train",
+    "prompt": "How can I use requests in a creative technology project?",
+    "answer": "requests: Fetch HTTP resources from Python; set timeouts, handle status codes and keep credentials out of logs.",
+    "aliases": [
+      "requests"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pypdf2",
+    "group": "tool-pypdf2",
+    "topic": "tool-pypdf2",
+    "split": "train",
+    "prompt": "How can I use PyPDF2 in a creative technology project?",
+    "answer": "PyPDF2: Work with PDF pages and embedded text; scanned image pages need a separate OCR stage, and extraction order may differ from reading order.",
+    "aliases": [
+      "PyPDF2"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-pdfminer",
+    "group": "tool-pdfminer",
+    "topic": "tool-pdfminer",
+    "split": "train",
+    "prompt": "How can I use pdfminer in a creative technology project?",
+    "answer": "pdfminer: Extract text and layout from PDFs; inspect columns, ligatures and code indentation before creating training examples.",
+    "aliases": [
+      "pdfminer"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-touchdesigner",
+    "group": "tool-touchdesigner",
+    "topic": "tool-touchdesigner",
+    "split": "train",
+    "prompt": "How can I use TouchDesigner in a creative technology project?",
+    "answer": "TouchDesigner: Connect CHOP, TOP and other operators for interactive audiovisual work; verify whether control channels and audio channels use compatible rates.",
+    "aliases": [
+      "TouchDesigner"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-hydra",
+    "group": "tool-hydra",
+    "topic": "tool-hydra",
+    "split": "train",
+    "prompt": "How can I use Hydra in a creative technology project?",
+    "answer": "Hydra: Compose live-coded visual transformations; keep browser performance and audio-input permissions separate from shader syntax.",
+    "aliases": [
+      "Hydra"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-processing",
+    "group": "tool-processing",
+    "topic": "tool-processing",
+    "split": "train",
+    "prompt": "How can I use Processing in a creative technology project?",
+    "answer": "Processing: Sketch interactive graphics with a draw loop; distinguish the Processing Java environment from p5.js in a browser.",
+    "aliases": [
+      "Processing"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-p5-js",
+    "group": "tool-p5-js",
+    "topic": "tool-p5-js",
+    "split": "train",
+    "prompt": "How can I use p5.js in a creative technology project?",
+    "answer": "p5.js: Build browser sketches with setup and draw; separate audio timing from animation frame timing.",
+    "aliases": [
+      "p5.js"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-three-js",
+    "group": "tool-three-js",
+    "topic": "tool-three-js",
+    "split": "train",
+    "prompt": "How can I use Three.js in a creative technology project?",
+    "answer": "Three.js: Construct a browser 3D scene with cameras, geometry and materials; dispose GPU resources when replacing scenes.",
+    "aliases": [
+      "Three.js"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-d3-js",
+    "group": "tool-d3-js",
+    "topic": "tool-d3-js",
+    "split": "train",
+    "prompt": "How can I use D3.js in a creative technology project?",
+    "answer": "D3.js: Bind structured data to visual elements; choose scales and axes that accurately represent units and domains.",
+    "aliases": [
+      "D3.js"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-webgl",
+    "group": "tool-webgl",
+    "topic": "tool-webgl",
+    "split": "train",
+    "prompt": "How can I use WebGL in a creative technology project?",
+    "answer": "WebGL: Render through a browser GPU API; check context support and handle context loss rather than assuming a persistent renderer.",
+    "aliases": [
+      "WebGL"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-openframeworks-ofx",
+    "group": "tool-openframeworks-ofx",
+    "topic": "tool-openframeworks-ofx",
+    "split": "train",
+    "prompt": "How can I use OpenFrameworks (ofx) in a creative technology project?",
+    "answer": "OpenFrameworks (ofx): Build C++ creative applications with openFrameworks; ofx names typically identify addons whose compatibility must be checked separately.",
+    "aliases": [
+      "OpenFrameworks (ofx)"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-blender",
+    "group": "tool-blender",
+    "topic": "tool-blender",
+    "split": "train",
+    "prompt": "How can I use Blender in a creative technology project?",
+    "answer": "Blender: Model and animate 3D scenes; distinguish rendering, geometry processing and scripting workloads when planning performance.",
+    "aliases": [
+      "Blender"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-houdini",
+    "group": "tool-houdini",
+    "topic": "tool-houdini",
+    "split": "train",
+    "prompt": "How can I use Houdini in a creative technology project?",
+    "answer": "Houdini: Build procedural geometry networks; cache expensive stages and record parameters so results can be reproduced.",
+    "aliases": [
+      "Houdini"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-parallax-js",
+    "group": "tool-parallax-js",
+    "topic": "tool-parallax-js",
+    "split": "train",
+    "prompt": "How can I use parallax.js in a creative technology project?",
+    "answer": "parallax.js: Add depth-like pointer or motion effects; confirm the exact package because similarly named projects have different APIs.",
+    "aliases": [
+      "parallax.js"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-web-midi",
+    "group": "tool-web-midi",
+    "topic": "tool-web-midi",
+    "split": "train",
+    "prompt": "How can I use Web MIDI in a creative technology project?",
+    "answer": "Web MIDI: Exchange MIDI messages with browser-accessible devices; feature-detect support and handle permission denial. MIDI events do not carry recorded audio.",
+    "aliases": [
+      "Web MIDI"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-mediapipe-touchdesigner-plugin",
+    "group": "tool-mediapipe-touchdesigner-plugin",
+    "topic": "tool-mediapipe-touchdesigner-plugin",
+    "split": "train",
+    "prompt": "How can I use MediaPipe TouchDesigner plugin in a creative technology project?",
+    "answer": "MediaPipe TouchDesigner plugin: Bridge landmark tracking into TouchDesigner; request the exact plugin repository and release before giving component-specific setup instructions.",
+    "aliases": [
+      "MediaPipe TouchDesigner plugin"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-tidalcycles",
+    "group": "tool-tidalcycles",
+    "topic": "tool-tidalcycles",
+    "split": "train",
+    "prompt": "How can I use TidalCycles in a creative technology project?",
+    "answer": "TidalCycles: Describe musical patterns evaluated by a live-coding environment; confirm the sound engine and sample bank rather than assuming every sound name exists.",
+    "aliases": [
+      "TidalCycles"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-strudel",
+    "group": "tool-strudel",
+    "topic": "tool-strudel",
+    "split": "train",
+    "prompt": "How can I use Strudel in a creative technology project?",
+    "answer": "Strudel: Use a browser-based pattern environment for musical sequences; check sample availability and browser audio activation before debugging rhythm.",
+    "aliases": [
+      "Strudel"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-gibber",
+    "group": "tool-gibber",
+    "topic": "tool-gibber",
+    "split": "train",
+    "prompt": "How can I use Gibber in a creative technology project?",
+    "answer": "Gibber: Create live-coded musical sequences and visuals; identify the environment version before using instrument-specific syntax.",
+    "aliases": [
+      "Gibber"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-glicol",
+    "group": "tool-glicol",
+    "topic": "tool-glicol",
+    "split": "train",
+    "prompt": "How can I use Glicol in a creative technology project?",
+    "answer": "Glicol: Describe audio graphs with a live-coding language; check the active engine and available nodes before composing a patch.",
+    "aliases": [
+      "Glicol"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-shadertoy",
+    "group": "tool-shadertoy",
+    "topic": "tool-shadertoy",
+    "split": "train",
+    "prompt": "How can I use Shadertoy in a creative technology project?",
+    "answer": "Shadertoy: Prototype fragment-shader visuals in its host environment; host-provided uniforms and entry points need adaptation outside Shadertoy.",
+    "aliases": [
+      "Shadertoy"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-glsl-sandbox",
+    "group": "tool-glsl-sandbox",
+    "topic": "tool-glsl-sandbox",
+    "split": "train",
+    "prompt": "How can I use GLSL Sandbox in a creative technology project?",
+    "answer": "GLSL Sandbox: Explore fragment shaders in a browser playground; verify its uniforms and GLSL dialect rather than pasting another host's shader unchanged.",
+    "aliases": [
+      "GLSL Sandbox"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-p5live",
+    "group": "tool-p5live",
+    "topic": "tool-p5live",
+    "split": "train",
+    "prompt": "How can I use p5live in a creative technology project?",
+    "answer": "p5live: Use a live-coding environment around p5.js; confirm the editor version and shared session behavior before collaborating.",
+    "aliases": [
+      "p5live"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-openprocessing",
+    "group": "tool-openprocessing",
+    "topic": "tool-openprocessing",
+    "split": "train",
+    "prompt": "How can I use OpenProcessing in a creative technology project?",
+    "answer": "OpenProcessing: Share and explore creative sketches; inspect each sketch's license and dependencies before reusing code in a dataset.",
+    "aliases": [
+      "OpenProcessing"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-ableton-live",
+    "group": "tool-ableton-live",
+    "topic": "tool-ableton-live",
+    "split": "train",
+    "prompt": "How can I use Ableton Live in a creative technology project?",
+    "answer": "Ableton Live: Arrange and process musical clips and tracks; measure end-to-end latency with the chosen interface and buffer configuration.",
+    "aliases": [
+      "Ableton Live"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-max-for-live",
+    "group": "tool-max-for-live",
+    "topic": "tool-max-for-live",
+    "split": "train",
+    "prompt": "How can I use Max for Live in a creative technology project?",
+    "answer": "Max for Live: Build Max devices inside Ableton Live; distinguish message-rate controls from signal-rate audio processing.",
+    "aliases": [
+      "Max for Live"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-logic-pro",
+    "group": "tool-logic-pro",
+    "topic": "tool-logic-pro",
+    "split": "train",
+    "prompt": "How can I use Logic Pro in a creative technology project?",
+    "answer": "Logic Pro: Record, arrange and mix audio and MIDI; preserve project sample rate and distinguish software monitoring from direct monitoring.",
+    "aliases": [
+      "Logic Pro"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-kontakt",
+    "group": "tool-kontakt",
+    "topic": "tool-kontakt",
+    "split": "train",
+    "prompt": "How can I use Kontakt in a creative technology project?",
+    "answer": "Kontakt: Create sample-based instruments; confirm the instrument edition and scripting support before planning automation.",
+    "aliases": [
+      "Kontakt"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-tal-sampler",
+    "group": "tool-tal-sampler",
+    "topic": "tool-tal-sampler",
+    "split": "train",
+    "prompt": "How can I use TAL-Sampler in a creative technology project?",
+    "answer": "TAL-Sampler: Explore sampler-based synthesis and resampling character; compare matched output levels when evaluating sonic differences.",
+    "aliases": [
+      "TAL-Sampler"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-jam-origin-midi-guitar-2",
+    "group": "tool-jam-origin-midi-guitar-2",
+    "topic": "tool-jam-origin-midi-guitar-2",
+    "split": "train",
+    "prompt": "How can I use Jam Origin MIDI Guitar 2 in a creative technology project?",
+    "answer": "Jam Origin MIDI Guitar 2: Convert guitar performance into MIDI control; tracking depends on input quality, pitch content and settings, so measure latency on your own setup.",
+    "aliases": [
+      "Jam Origin MIDI Guitar 2"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-gradio",
+    "group": "tool-gradio",
+    "topic": "tool-gradio",
+    "split": "train",
+    "prompt": "How can I use Gradio in a creative technology project?",
+    "answer": "Gradio: Build a quick model-demo interface; keep model execution and secrets on the server and bound user requests.",
+    "aliases": [
+      "Gradio"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-streamlit",
+    "group": "tool-streamlit",
+    "topic": "tool-streamlit",
+    "split": "train",
+    "prompt": "How can I use Streamlit in a creative technology project?",
+    "answer": "Streamlit: Build an interactive Python data app; understand reruns and cache lifetime before loading a large model.",
+    "aliases": [
+      "Streamlit"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-fastapi",
+    "group": "tool-fastapi",
+    "topic": "tool-fastapi",
+    "split": "train",
+    "prompt": "How can I use FastAPI in a creative technology project?",
+    "answer": "FastAPI: Expose validated Python HTTP endpoints; bound concurrent GPU requests and avoid blocking the event loop with synchronous work.",
+    "aliases": [
+      "FastAPI"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-node-js",
+    "group": "tool-node-js",
+    "topic": "tool-node-js",
+    "split": "train",
+    "prompt": "How can I use Node.js in a creative technology project?",
+    "answer": "Node.js: Run server-side JavaScript and tooling; move heavy CPU work away from the main event loop.",
+    "aliases": [
+      "Node.js"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-flutter",
+    "group": "tool-flutter",
+    "topic": "tool-flutter",
+    "split": "train",
+    "prompt": "How can I use Flutter in a creative technology project?",
+    "answer": "Flutter: Build interfaces with Dart across supported platforms; check audio-plugin capabilities on each target platform.",
+    "aliases": [
+      "Flutter"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-react-native",
+    "group": "tool-react-native",
+    "topic": "tool-react-native",
+    "split": "train",
+    "prompt": "How can I use React Native in a creative technology project?",
+    "answer": "React Native: Build native mobile interfaces with React; test native audio and camera modules separately on each operating system.",
+    "aliases": [
+      "React Native"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-websocket",
+    "group": "tool-websocket",
+    "topic": "tool-websocket",
+    "split": "train",
+    "prompt": "How can I use WebSocket in a creative technology project?",
+    "answer": "WebSocket: Maintain a bidirectional connection for live controls; include timestamps and reconnect handling rather than assuming delivery timing is constant.",
+    "aliases": [
+      "WebSocket"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-mqtt",
+    "group": "tool-mqtt",
+    "topic": "tool-mqtt",
+    "split": "train",
+    "prompt": "How can I use MQTT in a creative technology project?",
+    "answer": "MQTT: Publish and subscribe to device messages through a broker; choose QoS deliberately and do not treat broker delivery as hard real-time scheduling.",
+    "aliases": [
+      "MQTT"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-onnx",
+    "group": "tool-onnx",
+    "topic": "tool-onnx",
+    "split": "train",
+    "prompt": "How can I use ONNX in a creative technology project?",
+    "answer": "ONNX: Represent supported model graphs for interchange; compare exported outputs against the original model on representative inputs.",
+    "aliases": [
+      "ONNX"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-tensorrt",
+    "group": "tool-tensorrt",
+    "topic": "tool-tensorrt",
+    "split": "train",
+    "prompt": "How can I use TensorRT in a creative technology project?",
+    "answer": "TensorRT: Optimize supported models for NVIDIA inference; verify precision, dynamic shapes and numerical accuracy on the target GPU.",
+    "aliases": [
+      "TensorRT"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-conda",
+    "group": "tool-conda",
+    "topic": "tool-conda",
+    "split": "train",
+    "prompt": "How can I use Conda in a creative technology project?",
+    "answer": "Conda: Manage environments and package dependencies; export the environment used for an experiment rather than relying on the global installation.",
+    "aliases": [
+      "Conda"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-anaconda",
+    "group": "tool-anaconda",
+    "topic": "tool-anaconda",
+    "split": "train",
+    "prompt": "How can I use Anaconda in a creative technology project?",
+    "answer": "Anaconda: Use a Python distribution and ecosystem of tools; distinguish the distribution from Conda, the environment manager.",
+    "aliases": [
+      "Anaconda"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-git",
+    "group": "tool-git",
+    "topic": "tool-git",
+    "split": "train",
+    "prompt": "How can I use Git in a creative technology project?",
+    "answer": "Git: Track source changes with commits; keep large datasets and credentials out of ordinary source history.",
+    "aliases": [
+      "Git"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-github",
+    "group": "tool-github",
+    "topic": "tool-github",
+    "split": "train",
+    "prompt": "How can I use GitHub in a creative technology project?",
+    "answer": "GitHub: Host repositories and collaboration workflows; a published repository or passing workflow does not prove a model was trained.",
+    "aliases": [
+      "GitHub"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-docker",
+    "group": "tool-docker",
+    "topic": "tool-docker",
+    "split": "train",
+    "prompt": "How can I use Docker in a creative technology project?",
+    "answer": "Docker: Package an application environment in containers; GPU access and audio-device access still require host configuration.",
+    "aliases": [
+      "Docker"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-azure",
+    "group": "tool-azure",
+    "topic": "tool-azure",
+    "split": "train",
+    "prompt": "How can I use Azure in a creative technology project?",
+    "answer": "Azure: Deploy cloud workloads with explicit resources and credentials; select the service and region before estimating capabilities or cost.",
+    "aliases": [
+      "Azure"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-openai",
+    "group": "tool-openai",
+    "topic": "tool-openai",
+    "split": "train",
+    "prompt": "How can I use OpenAI in a creative technology project?",
+    "answer": "OpenAI: Treat this as a provider and API ecosystem; ask for the exact model and endpoint, and keep API keys server-side.",
+    "aliases": [
+      "OpenAI"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-net",
+    "group": "tool-net",
+    "topic": "tool-net",
+    "split": "train",
+    "prompt": "How can I use .NET in a creative technology project?",
+    "answer": ".NET: Build applications with the .NET runtime and libraries; distinguish the runtime from C#, one language targeting it.",
+    "aliases": [
+      ".NET"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-kusto-query-language",
+    "group": "tool-kusto-query-language",
+    "topic": "tool-kusto-query-language",
+    "split": "train",
+    "prompt": "How can I use Kusto Query Language in a creative technology project?",
+    "answer": "Kusto Query Language: Query telemetry and time-series logs; check time windows and aggregation grain before interpreting latency percentiles.",
+    "aliases": [
+      "Kusto Query Language"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-grpc",
+    "group": "tool-grpc",
+    "topic": "tool-grpc",
+    "split": "train",
+    "prompt": "How can I use gRPC in a creative technology project?",
+    "answer": "gRPC: Define typed remote services, often using Protocol Buffers; account for deadlines, streaming behavior and versioned schemas.",
+    "aliases": [
+      "gRPC"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-rest-apis",
+    "group": "tool-rest-apis",
+    "topic": "tool-rest-apis",
+    "split": "train",
+    "prompt": "How can I use REST APIs in a creative technology project?",
+    "answer": "REST APIs: Design resource-oriented HTTP interfaces; validate inputs and use explicit status codes and authentication boundaries.",
+    "aliases": [
+      "REST APIs"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-obs",
+    "group": "tool-obs",
+    "topic": "tool-obs",
+    "split": "train",
+    "prompt": "How can I use OBS in a creative technology project?",
+    "answer": "OBS: Compose and stream audiovisual scenes; inspect audio routing, sync offsets and encoder load separately.",
+    "aliases": [
+      "OBS"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-ndi",
+    "group": "tool-ndi",
+    "topic": "tool-ndi",
+    "split": "train",
+    "prompt": "How can I use NDI in a creative technology project?",
+    "answer": "NDI: Transport video and related media over a network; bandwidth, network conditions and buffering affect end-to-end latency.",
+    "aliases": [
+      "NDI"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-obs-camera",
+    "group": "tool-obs-camera",
+    "topic": "tool-obs-camera",
+    "split": "train",
+    "prompt": "How can I use OBS Camera in a creative technology project?",
+    "answer": "OBS Camera: Clarify whether this means OBS Virtual Camera or a specific phone-camera app; the name alone is insufficient for reliable setup instructions.",
+    "aliases": [
+      "OBS Camera"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-midi",
+    "group": "tool-midi",
+    "topic": "tool-midi",
+    "split": "train",
+    "prompt": "How can I use MIDI in a creative technology project?",
+    "answer": "MIDI: Represent musical performance and control events; note-on velocity is not an audio waveform and channel routing affects instrument selection.",
+    "aliases": [
+      "MIDI"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-osc",
+    "group": "tool-osc",
+    "topic": "tool-osc",
+    "split": "train",
+    "prompt": "How can I use OSC in a creative technology project?",
+    "answer": "OSC: Send addressed control messages between applications; specify argument types, transport and timing expectations at both endpoints.",
+    "aliases": [
+      "OSC"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  },
+  {
+    "id": "tool-sdfs-signed-distance-functions",
+    "group": "tool-sdfs-signed-distance-functions",
+    "topic": "tool-sdfs-signed-distance-functions",
+    "split": "train",
+    "prompt": "How can I use SDFs (signed distance functions) in a creative technology project?",
+    "answer": "SDFs (signed distance functions): Represent distance to a surface with a sign convention; sphere tracing requires a valid distance bound, so arbitrary procedural fields can overshoot.",
+    "aliases": [
+      "SDFs (signed distance functions)"
+    ],
+    "origin": "synthetic-authored-tool-primer",
+    "review_status": "original introductory example; expert review pending",
+    "execution_status": "conceptual-example; no target-runtime execution"
+  }
+]

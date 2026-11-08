@@ -1,11 +1,12 @@
-# Initial validation
+# Validation — November 8, 2026
 
-Completed November 7, 2026:
+Completed for the creative-coding expansion:
 
-- 12 standard-library unit tests passed: dataset schema and group separation, topic coverage, formula values, response masks, end tokens, overflow rejection, template mismatches, padding masks, numeric grading, duplicate rejection, held-out prompts, API conversation validation and browser-note provenance.
-- Python scripts compile and all notebook code cells parse.
-- Browser JavaScript and generated note data pass Node syntax checks.
-- Desktop browser: starter prompt, typed Arduino question, Enter submission, new chat and an unrelated-query fallback exercised.
-- Mobile-sized iframe: responsive layout and drum question exercised; document width equals scroll width (375 px), with no horizontal overflow.
+- 14 Python unit tests passed: schema, duplicates, exercise-group separation, domain coverage, calculation values, response masks, padding, overflow handling, evaluation separation, conversation validation, note provenance, source IDs and dataset hashes.
+- Node retrieval suite passed 18 short-query regressions (including the screenshot's `Drum synth`), all 84 exact note prompts, unrelated-query fallbacks and explicit platform boundaries.
+- Python scripts and all notebook code cells parse; browser JavaScript and generated note data pass Node syntax checks.
+- Dataset: 132 training rows, 25 validation rows, 25 separate evaluation prompts. Browser: 84 authored notes. Creative expansion: 45 source-informed examples referencing 33 documentation pages.
 
-These checks do not execute the Unsloth/CUDA stack. Model download, real tokenizer integration, GPU training, generated-answer evaluation and GPU API serving remain unverified until the notebook runs. No adapter or benchmark result is represented as complete.
+No CUDA GPU or PyTorch/Unsloth runtime was present in the authoring environment. Training, actual-tokenizer integration, adapter generation, model comparisons and GPU API serving have not run. Creative-language snippets have not run in Tidal, Hydra, TouchDesigner, Gibber, ChucK, p5.js or SuperCollider. JavaScript parsing is not a runtime correctness guarantee. No model accuracy or latency result is claimed.
+
+Prior initial-release browser checks are historical; they do not validate the new release. Current release browser verification is recorded separately after publication.

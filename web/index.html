@@ -6,10 +6,11 @@
   <meta name="theme-color" content="#0b100e">
   <meta name="description" content="Keeks the Geek: a little creative technology chatbot by Kiki. Explore music, DSP, physics, AI, creative coding, drum building and Arduino synths.">
   <title>Keeks the Geek · Kiki's curiosity lab</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=creative-1">
   <script src="./config.js" defer></script>
-  <script src="./notes.js" defer></script>
-  <script src="./chat.js" defer></script>
+  <script src="./notes.js?v=creative-1" defer></script>
+  <script src="./retrieval.js?v=creative-1" defer></script>
+  <script src="./chat.js?v=creative-1" defer></script>
 </head>
 <body>
   <a class="skip" href="#question">Skip to chat</a>
@@ -22,7 +23,7 @@
       <p class="eyebrow"><span class="status-dot"></span> A PROJECT BY KIKI</p>
       <h1>keeks<br>the <em>geek.</em></h1>
       <p class="tagline">Little bot.<br>Big rabbit holes.</p>
-      <p class="description">For the things that make your brain light up. From a vibrating drumhead to the math inside a synth.</p>
+      <p class="description">For the things that make your brain light up. From drum synthesis to live-coded sound and graphics.</p>
       <div class="scope" aria-label="Decorative oscillator playground">
         <div class="scope-top"><span>THE CURIOSITY OSCILLATOR</span><span id="wave-value">3 cycles</span></div>
         <canvas id="wave" width="560" height="180" aria-label="Illustration of an adjustable sine wave"></canvas>
@@ -30,10 +31,10 @@
         <input id="frequency" type="range" min="1" max="8" step="0.1" value="3" aria-label="Wave cycles in illustration">
         <p>Just a drawing. No sound, no mic.</p>
       </div>
-      <div class="topics" aria-label="Special interests"><span>music</span><span>DSP + FFT</span><span>physics</span><span>AI + code</span><span>graphics</span><span>drum building</span><span>Arduino synths</span></div>
+      <div class="topics" aria-label="Special interests"><span>music</span><span>DSP + FFT</span><span>physics</span><span>AI + code</span><span>graphics</span><span>drum synthesis</span><span>TidalCycles</span><span>Hydra</span><span>TouchDesigner</span><span>Gibber</span><span>ChucK</span><span>sampling</span><span>p5.js</span><span>Arduino synths</span></div>
       <details class="lab-notes">
         <summary>What's inside Keeks?</summary>
-        <p id="about-mode">This demo searches 48 synthetic starter notes. It does not generate answers with an LLM yet. The GitHub project includes a Qwen + Unsloth fine-tuning notebook, dataset, evaluation, and model-server code.</p>
+        <p id="about-mode">This demo searches 84 authored starter notes, including creative coding examples with documentation links. It does not generate answers with an LLM yet. The GitHub project includes a Qwen + Unsloth fine-tuning notebook, dataset, evaluation, and model-server code.</p>
         <p>Demo questions stay in this page's memory and disappear on reload. Connected model mode sends your conversation to the configured model server.</p>
       </details>
     </aside>
@@ -45,10 +46,12 @@
       </div>
       <div class="chat-body" id="messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions text"></div>
       <div class="suggestions" id="suggestions" aria-label="Try a question">
-        <button type="button" data-question="What is an FFT, intuitively?">Make FFTs click <span>↗</span></button>
-        <button type="button" data-question="How do I start making an Arduino synthesizer?">Build a tiny synth <span>↗</span></button>
-        <button type="button" data-question="What changes when I tighten a drumhead?">Nerd out about drums <span>↗</span></button>
-        <button type="button" data-question="How do I make visuals react to music without flickering?">Make sound visible <span>↗</span></button>
+        <button type="button" data-question="Drum synth">Build a drum synth <span>↗</span></button>
+        <button type="button" data-question="TidalCycles">Code a Tidal beat <span>↗</span></button>
+        <button type="button" data-question="Hydra audio">Audio-reactive Hydra <span>↗</span></button>
+        <button type="button" data-question="TD FFT">TouchDesigner FFT <span>↗</span></button>
+        <button type="button" data-question="Gibber">Sequence with Gibber <span>↗</span></button>
+        <button type="button" data-question="ChucK sample">Sample in ChucK <span>↗</span></button>
       </div>
       <form id="chat-form" class="composer">
         <label class="sr-only" for="question">Ask Keeks a question</label>

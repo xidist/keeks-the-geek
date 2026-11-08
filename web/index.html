@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b100e">
+  <meta name="description" content="Keeks the Geek: a little creative technology chatbot by Kiki. Explore music, DSP, physics, AI, creative coding, drum building and Arduino synths.">
+  <title>Keeks the Geek · Kiki's curiosity lab</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./config.js" defer></script>
+  <script src="./notes.js" defer></script>
+  <script src="./chat.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#question">Skip to chat</a>
+  <header class="topbar">
+    <a class="wordmark" href="https://xidist.xyz">xidist<span> / curiosity lab</span></a>
+    <a class="source" href="https://github.com/xidist/keeks-the-geek" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="layout">
+    <aside class="intro">
+      <p class="eyebrow"><span class="status-dot"></span> A PROJECT BY KIKI</p>
+      <h1>keeks<br>the <em>geek.</em></h1>
+      <p class="tagline">Little bot.<br>Big rabbit holes.</p>
+      <p class="description">For the things that make your brain light up. From a vibrating drumhead to the math inside a synth.</p>
+      <div class="scope" aria-label="Decorative oscillator playground">
+        <div class="scope-top"><span>THE CURIOSITY OSCILLATOR</span><span id="wave-value">3 cycles</span></div>
+        <canvas id="wave" width="560" height="180" aria-label="Illustration of an adjustable sine wave"></canvas>
+        <label for="frequency">Turn the imaginary knob <span aria-hidden="true">↝</span></label>
+        <input id="frequency" type="range" min="1" max="8" step="0.1" value="3" aria-label="Wave cycles in illustration">
+        <p>Just a drawing. No sound, no mic.</p>
+      </div>
+      <div class="topics" aria-label="Special interests"><span>music</span><span>DSP + FFT</span><span>physics</span><span>AI + code</span><span>graphics</span><span>drum building</span><span>Arduino synths</span></div>
+      <details class="lab-notes">
+        <summary>What's inside Keeks?</summary>
+        <p id="about-mode">This demo searches 48 synthetic starter notes. It does not generate answers with an LLM yet. The GitHub project includes a Qwen + Unsloth fine-tuning notebook, dataset, evaluation, and model-server code.</p>
+        <p>Demo questions stay in this page's memory and disappear on reload. Connected model mode sends your conversation to the configured model server.</p>
+      </details>
+    </aside>
+    <section class="chat" aria-labelledby="chat-title">
+      <div class="chat-header">
+        <div class="avatar" aria-hidden="true"><span>k</span><i></i></div>
+        <div class="chat-identity"><h2 id="chat-title">Keeks the Geek</h2><p id="mode-label">Demo · starter notes</p></div>
+        <button id="clear" class="text-button" type="button">New chat</button>
+      </div>
+      <div class="chat-body" id="messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions text"></div>
+      <div class="suggestions" id="suggestions" aria-label="Try a question">
+        <button type="button" data-question="What is an FFT, intuitively?">Make FFTs click <span>↗</span></button>
+        <button type="button" data-question="How do I start making an Arduino synthesizer?">Build a tiny synth <span>↗</span></button>
+        <button type="button" data-question="What changes when I tighten a drumhead?">Nerd out about drums <span>↗</span></button>
+        <button type="button" data-question="How do I make visuals react to music without flickering?">Make sound visible <span>↗</span></button>
+      </div>
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="question">Ask Keeks a question</label>
+        <textarea id="question" name="question" maxlength="2000" rows="2" placeholder="What are we making today?" required></textarea>
+        <button id="send" type="submit" aria-label="Send question"><span aria-hidden="true">↑</span></button>
+      </form>
+      <div class="composer-note"><span id="request-status" role="status">Enter to send · Shift + Enter for a new line</span><span id="counter">0 / 2000</span></div>
+      <p class="mode-disclosure" id="mode-disclosure">Starter-note demo. Fine-tuned model not connected yet.</p>
+    </section>
+  </main>
+  <footer><span>made of questions, waveforms &amp; a little mischief.</span><a href="https://unsloth.ai/docs" target="_blank" rel="noopener noreferrer">Fine-tuning with Unsloth ↗</a></footer>
+</body>
+</html>

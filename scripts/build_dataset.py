@@ -8,6 +8,9 @@ from common import ROOT, digest, load_config, validate_rows, write_jsonl
 def build():
     cfg = load_config()
     seeds = json.loads((ROOT / "data/seeds.json").read_text())
+    creative = json.loads((ROOT / "data/creative_seeds.json").read_text())
+    sources = {s["id"]: s for s in json.loads((ROOT / "data/creative_sources.json").read_text())}
+    seeds += creative
     splits = {"train": [], "validation": []}
     def add(split, identifier, group, topic, prompt, answer, origin, calculation=None):
         row = {"id": identifier, "group": group, "topic": topic, "origin": origin,
@@ -18,7 +21,14 @@ def build():
             row["calculation"] = calculation
         splits[split].append(row)
     for row in seeds:
-        add(row["split"], row["id"], row["group"], row["topic"], row["prompt"], row["answer"], "synthetic-authored")
+        refs = [sources[s] for s in row.get("source_ids", [])]
+        answer = row["answer"]
+        if refs:
+            answer += "\n\nReferences:\n" + "\n".join(s["url"] for s in refs)
+        add(row["split"], row["id"], row["group"], row["topic"], row["prompt"], answer, row.get("origin", "synthetic-authored"))
+        if refs:
+            splits[row["split"]][-1].update(source_ids=row["source_ids"],
+                review_status=row["review_status"], execution_status=row["execution_status"])
     for i, (sample_rate, size) in enumerate((s, n) for s in (32000, 44100, 48000) for n in (128, 256, 512, 1024)):
         value = size / sample_rate * 1000
         add("train", f"num-buffer-{i:02}", "numeric-buffer", "dsp",
@@ -48,10 +58,19 @@ def build():
         raise ValueError("Group leakage")
     for name, rows in splits.items():
         write_jsonl(ROOT / f"data/{name}.jsonl", rows)
-    demo = [{key: r[key] for key in ("id", "topic", "prompt", "answer")} for r in seeds if r["split"] == "train"]
+    demo = []
+    for row in seeds:
+        if row["split"] != "train":
+            continue
+        note = {key: row[key] for key in ("id", "topic", "prompt", "answer")}
+        note["aliases"] = row.get("aliases", [])
+        note["sources"] = [{k: sources[s][k] for k in ("title", "url")} for s in row.get("source_ids", [])]
+        demo.append(note)
     (ROOT / "web/notes.js").write_text("// Synthetic starter notes, not model generations. Built from data/seeds.json.\nwindow.KEEKS_NOTES = " + json.dumps(demo, ensure_ascii=False) + ";\n", encoding="utf-8")
     manifest = {"synthetic": True, "human_expert_reviewed": False, "seed": cfg["seed"],
-                "split_policy": "Explicit group holdout; all variants of each numerical template remain in train.",
+                "split_policy": "Explicit exercise-group holdout; numerical variants remain in train. Related concepts and source pages may occur in both splits; this is not source-disjoint evaluation.",
+                "creative_examples": len(creative), "demo_notes": len(demo), "documentation_sources": len(sources),
+                "input_sha256": {p: digest(ROOT / p) for p in ("data/seeds.json", "data/creative_seeds.json", "data/creative_sources.json")},
                 "splits": {name: {"count": len(rows), "topics": dict(Counter(r["topic"] for r in rows)),
                                   "sha256": digest(ROOT / f"data/{name}.jsonl")} for name, rows in splits.items()}}
     (ROOT / "data/manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
